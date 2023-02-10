@@ -1,0 +1,171 @@
+[
+  {
+    "responseData": true,
+    "requestClass": "MessageService",
+    "requestMethod": "newMessage",
+    "requestId": 15,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "time": 1675984507,
+      "__class__": "Time"
+    },
+    "requestClass": "TimeService",
+    "requestMethod": "updateTime",
+    "requestId": 15,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": [
+      {
+        "player": {
+          "player_id": 852012317,
+          "name": "iworeane",
+          "avatar": "portrait_id_131",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 955,
+        "city_entity_id": "X_AllAge_Expedition",
+        "name": "Temple of Relics",
+        "level": 7,
+        "current_progress": 50,
+        "max_progress": 490,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 852012317,
+          "name": "iworeane",
+          "avatar": "portrait_id_131",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 937,
+        "city_entity_id": "X_FutureEra_Landmark1",
+        "name": "The Arc",
+        "level": 135,
+        "current_progress": 170,
+        "max_progress": 21777,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 852012317,
+          "name": "iworeane",
+          "avatar": "portrait_id_131",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 954,
+        "city_entity_id": "X_LateMiddleAge_Landmark3",
+        "name": "Castel del Monte",
+        "level": 78,
+        "max_progress": 3847,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 852012317,
+          "name": "iworeane",
+          "avatar": "portrait_id_131",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 906,
+        "city_entity_id": "X_EarlyMiddleAge_Landmark2",
+        "name": "Cathedral of Aachen",
+        "level": 74,
+        "max_progress": 2987,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 852012317,
+          "name": "iworeane",
+          "avatar": "portrait_id_131",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 2195,
+        "city_entity_id": "X_VirtualFuture_Landmark1",
+        "name": "Terracotta Army",
+        "level": 16,
+        "max_progress": 1439,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 852012317,
+          "name": "iworeane",
+          "avatar": "portrait_id_131",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 1431,
+        "city_entity_id": "X_ProgressiveEra_Landmark2",
+        "name": "Ch\u00e2teau Frontenac",
+        "level": 10,
+        "current_progress": 1,
+        "max_progress": 851,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 852012317,
+          "name": "iworeane",
+          "avatar": "portrait_id_131",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 1326,
+        "city_entity_id": "X_AllAge_EasterBonus4",
+        "name": "Observatory",
+        "level": 65,
+        "current_progress": 1,
+        "max_progress": 2591,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 852012317,
+          "name": "iworeane",
+          "avatar": "portrait_id_131",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 194,
+        "city_entity_id": "X_BronzeAge_Landmark2",
+        "name": "Statue of Zeus",
+        "level": 74,
+        "max_progress": 2539,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 852012317,
+          "name": "iworeane",
+          "avatar": "portrait_id_131",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 2221,
+        "city_entity_id": "X_ArcticFuture_Landmark2",
+        "name": "Arctic Orangery",
+        "level": 52,
+        "max_progress": 3210,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 852012317,
+          "name": "iworeane",
+          "avatar": "portrait_id_131",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 431,
+        "city_entity_id": "X_ProgressiveEra_Landmark1",
+        "name": "Alcatraz",
+        "level": 57,
+        "max_progress": 2716,
+        "__class__": "GreatBuildingContributionRow"
+      }
+    ],
+    "requestClass": "GreatBuildingsService",
+    "requestMethod": "getOtherPlayerOverview",
+    "requestId": 15,
+    "__class__": "ServerResponse"
+  }
+]

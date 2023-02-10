@@ -1,0 +1,62 @@
+[
+  {
+    "responseData": {
+      "time": 1675625588,
+      "__class__": "Time"
+    },
+    "requestClass": "TimeService",
+    "requestMethod": "updateTime",
+    "requestId": 5,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "announcements": [
+        {
+          "id": 803,
+          "title": "Changelog 1.249",
+          "message": "Dear Kings and Queens, we will soon update Forge of Empires to version 1.249. For more details, please check our forum announcement.",
+          "callToAction": {
+            "type": "uri",
+            "value": "https:\/\/forum.us.forgeofempires.com\/index.php?threads\/changelog-1-249.44936\/",
+            "__class__": "CallToAction"
+          },
+          "icon": "announcement_icon_1.png",
+          "date": "on 1\/28\/23 at 7:55 pm",
+          "__class__": "Announcement"
+        },
+        {
+          "id": 799,
+          "title": "Get in the pitch!",
+          "message": "Forge Bowl is running full steam ahead! Check out what you are about to miss if you don't join the fun by watching our video now! ",
+          "callToAction": {
+            "type": "uri",
+            "value": "https:\/\/youtu.be\/_saYJ_1904U",
+            "__class__": "CallToAction"
+          },
+          "icon": "announcement_icon_1.png",
+          "date": "on 1\/25\/23 at 12:00 am",
+          "__class__": "Announcement"
+        },
+        {
+          "id": 797,
+          "title": "Are you ready for the Forge Bowl?",
+          "message": "Our famous quarterback Carl Rogers and his InnoForgers are back to participate in this year's Forge Bowl! Support them on their way to glory and win amazing prizes like the new Pergola! Find out more about the event in our Forum Announcement by clicking on the button below.",
+          "callToAction": {
+            "type": "uri",
+            "value": "https:\/\/forum.us.forgeofempires.com\/index.php?threads\/forge-bowl-2023.44885\/",
+            "__class__": "CallToAction"
+          },
+          "icon": "announcement_icon_1.png",
+          "date": "on 1\/15\/23 at 9:10 pm",
+          "__class__": "Announcement"
+        }
+      ],
+      "__class__": "Announcements"
+    },
+    "requestClass": "AnnouncementsService",
+    "requestMethod": "fetchAllAnnouncements",
+    "requestId": 5,
+    "__class__": "ServerResponse"
+  }
+]

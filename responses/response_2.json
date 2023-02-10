@@ -1,0 +1,21 @@
+[
+  {
+    "responseData": {
+      "time": 1675625588,
+      "__class__": "Time"
+    },
+    "requestClass": "TimeService",
+    "requestMethod": "updateTime",
+    "requestId": 4,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "__class__": "Success"
+    },
+    "requestClass": "TrackingService",
+    "requestMethod": "trackLoginDone",
+    "requestId": 4,
+    "__class__": "ServerResponse"
+  }
+]
