@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         ForgePlus2
+// @name         SuperForge
 // @namespace    http://tampermonkey.net/
 // @version      0.12
 // @description  try to take over the world!
