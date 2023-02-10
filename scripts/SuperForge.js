@@ -11,21 +11,10 @@
 // @run-at       document-body
 // @require      https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js
 // @require      https://raw.githubusercontent.com/caldwell/renderjson/master/renderjson.js
-// @require      http://localhost:8080/scripts/helpers.js
-// @resource     battleground_leagues http://localhost:8080/json/battleground_leagues.json
-// @resource     building_chains http://localhost:8080/json/building_chains.json
-// @resource     building_sets http://localhost:8080/json/building_sets.json
-// @resource     grid http://localhost:8080/json/grid.json
-// @resource     info_screens http://localhost:8080/json/info_screens.json
-// @resource     boost_metadata http://localhost:8080/json/boost_metadata.json
-// @resource     building_upgrades http://localhost:8080/json/building_upgrades.json
-// @resource     castle_system_levels http://localhost:8080/json/castle_system_levels.json
-// @resource     selection_kits http://localhost:8080/json/selection_kits.json
-// @resource     unit_types http://localhost:8080/json/unit_types.json
-// @resource     quest_tabs http://localhost:8080/json/quest_tabs.json
-// @resource     city_entities http://localhost:8080/json/city_entities.json
-// @resource     assetMap http://localhost:8080/json/assetmap.json
-// @resource     gb_data http://localhost:8080/json/gb_data.json
+// @require      https://raw.githubusercontent.com/Eiltherune/SuperForge/main/scripts/helpers.js
+// @resource     city_entities https://raw.githubusercontent.com/Eiltherune/SuperForge/main/json/city_entities.json
+// @resource     assetMap https://raw.githubusercontent.com/Eiltherune/SuperForge/main/json/assetmap.json
+// @resource     gb_data https://raw.githubusercontent.com/Eiltherune/SuperForge/main/json/gb_data.json
 // ==/UserScript==
 
 function setupOverview () {
