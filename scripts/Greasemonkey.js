@@ -132,7 +132,7 @@ function GM_setValue (name, value) {
  */
 function GM_getResourceText (resourceName) {
   let xmlHttpObject = new XMLHttpRequest()
-  const host = /response/.test(resourceName) ? '../responses/' : '../json/'
+  const host = /response/.test(resourceName) ? '/responses/' : '/json/'
   xmlHttpObject.open('GET', `${host}${resourceName}.json`, false)
   xmlHttpObject.send()
   return xmlHttpObject.responseText
