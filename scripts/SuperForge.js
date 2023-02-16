@@ -17,6 +17,50 @@
 // @resource     gb_data https://raw.githubusercontent.com/Eiltherune/SuperForge/main/json/gb_data.json
 // ==/UserScript==
 
+(function () {
+  let styleSheet = document.createElement('link')
+  styleSheet.rel = 'stylesheet'
+  styleSheet.href = 'http://localhost:8080/ForgePlus.css'
+  document.head.append(styleSheet)
+
+  let sidebar = GM_getResourceText('sidebar')
+
+  $('#game_body').append(sidebar)
+  let open = XMLHttpRequest.prototype.open
+  // noinspection JSValidateTypes
+  XMLHttpRequest.prototype.open = function (method, url, async, user, pass) {
+    // noinspection JSUnusedLocalSymbols
+    this.addEventListener('load', function (event) {
+      if (/json\?h/.test(url)) {
+        console.dir([url, JSON.parse(this.responseText )])
+        handleJson(JSON.parse(this.responseText))
+      }
+    })
+    return open.apply(this, arguments)
+  }
+})()
+
+let activePanel = 'overview-panel'
+
+function toggle (panelId) {
+  document.getElementById(activePanel).classList.toggle('hidden')
+  activePanel = panelId
+  document.getElementById(panelId).classList.toggle('hidden')
+}
+
+function collapse(fieldset) {
+  document.getElementById(fieldset).classList.toggle('expanded')
+  console.log(fieldset)
+}
+/**
+ *
+ * @param {JSON} response
+ */
+function handleJson(response) {
+
+}
+/*
+
 function setupOverview () {
   let panel = Panels.Overview
   let production = FS('Production', panel)
@@ -55,22 +99,6 @@ function setupOverview () {
   let tavern = FS('Tavern Overview', panel)
 }
 
-(function () {
-  let styleSheet = document.createElement('link')
-  styleSheet.rel = 'stylesheet'
-  styleSheet.href = 'http://localhost:8080/ForgePlus.css'
-  document.head.append(styleSheet)
-
-  let open = XMLHttpRequest.prototype.open
-  XMLHttpRequest.prototype.open = function (method, url, async, user, pass) {
-    this.addEventListener('load', function (event) {
-      if (/json\?h/.test(url)) {
-        handleResponse(JSON.parse(this.responseText))
-      }
-    })
-    return open.apply(this, arguments)
-  }
-})()
 
 const gb_data = JSON.parse(GM_getResourceText('gb_data'))
 const eras = {
@@ -97,39 +125,7 @@ const eras = {
   20: 'SpaceAgeJupiterMoon'
 }
 
-function metaData (meta) {
-  let keys
-  switch (meta) {
-    case 'building_upgrades':
-      keys = ['upgradeItem', 'id']
-      break
-    case 'boost_metadata':
-      keys = ['type']
-      break
-    case 'castle_system_levels':
-      keys = ['level']
-      break
-    case 'selection_kits':
-      keys = ['selectionKitId']
-      break
-    case 'unit_types':
-      keys = ['unitTypeId']
-      break
-    default:
-      keys = ['id']
-  }
-  let metadata = {}
-  let [primaryKey, subKey] = keys
-  for (const data of JSON.parse(GM_getResourceText(meta))) {
-    if (subKey) {
-      let key = data[primaryKey]
-      metadata[data[primaryKey][subKey]] = data
-    } else {
-      metadata[data[primaryKey]] = data
-    }
-  }
-  return metadata
-}
+
 
 let cityData = { 'Production': {}, 'Boosts': {}, 'Entities': {} }
 let cityStats = { 'Population': 0, 'Happiness': 0 }
@@ -317,11 +313,11 @@ function startup2 (data) {
 }
 
 class GBProgress {
-  /**
+  /!**
    * @param  building
    * @property building.max_progress
    *
-   **/
+   **!/
   constructor (building) {
     this.name = building.name
     this.current = 'current_progress' in building ? building.current_progress : 0
@@ -438,3 +434,4 @@ for (let response = 1; response < 6; response++) {
   handleResponse(JSON.parse(GM_getResourceText(`response_${response}`)))
 }
 
+*/

@@ -67,3 +67,37 @@ function TR (tableId, rClass, cells, isHeader) {
   table.appendChild(row)
   return row
 }
+
+function metaData (meta) {
+  let keys
+  switch (meta) {
+    case 'building_upgrades':
+      keys = ['upgradeItem', 'id']
+      break
+    case 'boost_metadata':
+      keys = ['type']
+      break
+    case 'castle_system_levels':
+      keys = ['level']
+      break
+    case 'selection_kits':
+      keys = ['selectionKitId']
+      break
+    case 'unit_types':
+      keys = ['unitTypeId']
+      break
+    default:
+      keys = ['id']
+  }
+  let metadata = {}
+  let [primaryKey, subKey] = keys
+  for (const data of JSON.parse(GM_getResourceText(meta))) {
+    if (subKey) {
+      let key = data[primaryKey]
+      metadata[data[primaryKey][subKey]] = data
+    } else {
+      metadata[data[primaryKey]] = data
+    }
+  }
+  return metadata
+}

@@ -132,8 +132,9 @@ function GM_setValue (name, value) {
  */
 function GM_getResourceText (resourceName) {
   let xmlHttpObject = new XMLHttpRequest()
-  const host = /response/.test(resourceName) ? 'responses' : 'json'
-  xmlHttpObject.open('GET', `https://eiltherune.github.io/SuperForge/${host}/${resourceName}.json`, false)
+  const host = /response/.test(resourceName) ? 'responses' : /sidebar/.test(resourceName) ? 'static' :'json'
+  const ext = host === 'static' ? 'html' : 'json'
+  xmlHttpObject.open('GET', `https://eiltherune.github.io/SuperForge/${host}/${resourceName}.${ext}`, false)
   xmlHttpObject.send()
   return xmlHttpObject.responseText
 }
