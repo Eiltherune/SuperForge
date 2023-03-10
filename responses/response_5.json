@@ -1,171 +1,229 @@
 [
   {
-    "responseData": true,
-    "requestClass": "MessageService",
-    "requestMethod": "newMessage",
-    "requestId": 15,
-    "__class__": "ServerResponse"
-  },
-  {
     "responseData": {
-      "time": 1675984507,
+      "time": 1676974476,
       "__class__": "Time"
     },
     "requestClass": "TimeService",
     "requestMethod": "updateTime",
-    "requestId": 15,
+    "requestId": 332,
     "__class__": "ServerResponse"
   },
   {
     "responseData": [
       {
+        "rank": 4,
         "player": {
-          "player_id": 852012317,
-          "name": "iworeane",
-          "avatar": "portrait_id_131",
+          "player_id": 5043205,
+          "name": "Aelriconin",
+          "avatar": "addon_portrait_id_genghis",
           "__class__": "OtherPlayer"
         },
-        "entity_id": 955,
-        "city_entity_id": "X_AllAge_Expedition",
-        "name": "Temple of Relics",
-        "level": 7,
-        "current_progress": 50,
-        "max_progress": 490,
-        "__class__": "GreatBuildingContributionRow"
-      },
-      {
-        "player": {
-          "player_id": 852012317,
-          "name": "iworeane",
-          "avatar": "portrait_id_131",
-          "__class__": "OtherPlayer"
+        "forge_points": 45,
+        "reward": {
+          "blueprints": 4,
+          "strategy_point_amount": 15,
+          "resources": {
+            "medals": 32,
+            "__class__": "CityResource"
+          },
+          "__class__": "GreatBuildingRankingRowReward"
         },
-        "entity_id": 937,
-        "city_entity_id": "X_FutureEra_Landmark1",
-        "name": "The Arc",
-        "level": 135,
-        "current_progress": 170,
-        "max_progress": 21777,
-        "__class__": "GreatBuildingContributionRow"
-      },
-      {
-        "player": {
-          "player_id": 852012317,
-          "name": "iworeane",
-          "avatar": "portrait_id_131",
-          "__class__": "OtherPlayer"
-        },
-        "entity_id": 954,
-        "city_entity_id": "X_LateMiddleAge_Landmark3",
-        "name": "Castel del Monte",
-        "level": 78,
-        "max_progress": 3847,
-        "__class__": "GreatBuildingContributionRow"
-      },
-      {
-        "player": {
-          "player_id": 852012317,
-          "name": "iworeane",
-          "avatar": "portrait_id_131",
-          "__class__": "OtherPlayer"
-        },
-        "entity_id": 906,
-        "city_entity_id": "X_EarlyMiddleAge_Landmark2",
-        "name": "Cathedral of Aachen",
-        "level": 74,
-        "max_progress": 2987,
-        "__class__": "GreatBuildingContributionRow"
-      },
-      {
-        "player": {
-          "player_id": 852012317,
-          "name": "iworeane",
-          "avatar": "portrait_id_131",
-          "__class__": "OtherPlayer"
-        },
-        "entity_id": 2195,
-        "city_entity_id": "X_VirtualFuture_Landmark1",
-        "name": "Terracotta Army",
-        "level": 16,
-        "max_progress": 1439,
-        "__class__": "GreatBuildingContributionRow"
-      },
-      {
-        "player": {
-          "player_id": 852012317,
-          "name": "iworeane",
-          "avatar": "portrait_id_131",
-          "__class__": "OtherPlayer"
-        },
-        "entity_id": 1431,
-        "city_entity_id": "X_ProgressiveEra_Landmark2",
-        "name": "Ch\u00e2teau Frontenac",
-        "level": 10,
-        "current_progress": 1,
-        "max_progress": 851,
-        "__class__": "GreatBuildingContributionRow"
-      },
-      {
-        "player": {
-          "player_id": 852012317,
-          "name": "iworeane",
-          "avatar": "portrait_id_131",
-          "__class__": "OtherPlayer"
-        },
-        "entity_id": 1326,
-        "city_entity_id": "X_AllAge_EasterBonus4",
-        "name": "Observatory",
-        "level": 65,
-        "current_progress": 1,
-        "max_progress": 2591,
-        "__class__": "GreatBuildingContributionRow"
-      },
-      {
-        "player": {
-          "player_id": 852012317,
-          "name": "iworeane",
-          "avatar": "portrait_id_131",
-          "__class__": "OtherPlayer"
-        },
-        "entity_id": 194,
+        "entity_id": 108,
         "city_entity_id": "X_BronzeAge_Landmark2",
         "name": "Statue of Zeus",
-        "level": 74,
-        "max_progress": 2539,
+        "level": 40,
+        "current_progress": 1087,
+        "max_progress": 1097,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "rank": 3,
+        "player": {
+          "player_id": 5043205,
+          "name": "Aelriconin",
+          "avatar": "addon_portrait_id_genghis",
+          "__class__": "OtherPlayer"
+        },
+        "forge_points": 57,
+        "reward": {
+          "blueprints": 4,
+          "strategy_point_amount": 30,
+          "resources": {
+            "medals": 70,
+            "__class__": "CityResource"
+          },
+          "__class__": "GreatBuildingRankingRowReward"
+        },
+        "entity_id": 1996,
+        "city_entity_id": "X_EarlyMiddleAge_Landmark3",
+        "name": "Galata Tower",
+        "level": 24,
+        "current_progress": 924,
+        "max_progress": 942,
         "__class__": "GreatBuildingContributionRow"
       },
       {
         "player": {
-          "player_id": 852012317,
-          "name": "iworeane",
-          "avatar": "portrait_id_131",
+          "player_id": 5043205,
+          "name": "Aelriconin",
+          "avatar": "addon_portrait_id_genghis",
           "__class__": "OtherPlayer"
         },
-        "entity_id": 2221,
-        "city_entity_id": "X_ArcticFuture_Landmark2",
-        "name": "Arctic Orangery",
-        "level": 52,
-        "max_progress": 3210,
+        "entity_id": 126,
+        "city_entity_id": "X_LateMiddleAge_Landmark3",
+        "name": "Castel del Monte",
+        "level": 91,
+        "current_progress": 356,
+        "max_progress": 5303,
         "__class__": "GreatBuildingContributionRow"
       },
       {
         "player": {
-          "player_id": 852012317,
-          "name": "iworeane",
-          "avatar": "portrait_id_131",
+          "player_id": 5043205,
+          "name": "Aelriconin",
+          "avatar": "addon_portrait_id_genghis",
           "__class__": "OtherPlayer"
         },
-        "entity_id": 431,
+        "entity_id": 1939,
+        "city_entity_id": "X_VirtualFuture_Landmark1",
+        "name": "Terracotta Army",
+        "level": 30,
+        "current_progress": 20,
+        "max_progress": 2033,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 5043205,
+          "name": "Aelriconin",
+          "avatar": "addon_portrait_id_genghis",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 675,
+        "city_entity_id": "X_LateMiddleAge_Landmark1",
+        "name": "Saint Basil's Cathedral",
+        "level": 14,
+        "max_progress": 792,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 5043205,
+          "name": "Aelriconin",
+          "avatar": "addon_portrait_id_genghis",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 141,
+        "city_entity_id": "X_BronzeAge_Landmark1",
+        "name": "Tower of Babel",
+        "level": 12,
+        "current_progress": 11,
+        "max_progress": 550,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 5043205,
+          "name": "Aelriconin",
+          "avatar": "addon_portrait_id_genghis",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 2,
+        "city_entity_id": "X_AllAge_Expedition",
+        "name": "Temple of Relics",
+        "level": 15,
+        "max_progress": 754,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 5043205,
+          "name": "Aelriconin",
+          "avatar": "addon_portrait_id_genghis",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 25,
+        "city_entity_id": "X_AllAge_EasterBonus4",
+        "name": "Observatory",
+        "level": 14,
+        "max_progress": 736,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 5043205,
+          "name": "Aelriconin",
+          "avatar": "addon_portrait_id_genghis",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 482,
+        "city_entity_id": "X_FutureEra_Landmark1",
+        "name": "The Arc",
+        "level": 90,
+        "max_progress": 7169,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 5043205,
+          "name": "Aelriconin",
+          "avatar": "addon_portrait_id_genghis",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 328,
         "city_entity_id": "X_ProgressiveEra_Landmark1",
         "name": "Alcatraz",
-        "level": 57,
-        "max_progress": 2716,
+        "level": 46,
+        "max_progress": 2070,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 5043205,
+          "name": "Aelriconin",
+          "avatar": "addon_portrait_id_genghis",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 751,
+        "city_entity_id": "X_ContemporaryEra_Landmark2",
+        "name": "Innovation Tower",
+        "level": 10,
+        "max_progress": 902,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 5043205,
+          "name": "Aelriconin",
+          "avatar": "addon_portrait_id_genghis",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 114,
+        "city_entity_id": "X_IronAge_Landmark2",
+        "name": "Lighthouse of Alexandria",
+        "level": 12,
+        "max_progress": 593,
+        "__class__": "GreatBuildingContributionRow"
+      },
+      {
+        "player": {
+          "player_id": 5043205,
+          "name": "Aelriconin",
+          "avatar": "addon_portrait_id_genghis",
+          "__class__": "OtherPlayer"
+        },
+        "entity_id": 124,
+        "city_entity_id": "X_EarlyMiddleAge_Landmark2",
+        "name": "Cathedral of Aachen",
+        "level": 31,
+        "max_progress": 1033,
         "__class__": "GreatBuildingContributionRow"
       }
     ],
     "requestClass": "GreatBuildingsService",
     "requestMethod": "getOtherPlayerOverview",
-    "requestId": 15,
+    "requestId": 332,
     "__class__": "ServerResponse"
   }
 ]

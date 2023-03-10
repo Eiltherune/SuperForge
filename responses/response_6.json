@@ -1,0 +1,325 @@
+[
+  {
+    "responseData": true,
+    "requestClass": "MessageService",
+    "requestMethod": "newMessage",
+    "requestId": 13,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "time": 1677247635,
+      "__class__": "Time"
+    },
+    "requestClass": "TimeService",
+    "requestMethod": "updateTime",
+    "requestId": 13,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "context": "st_patricks_event",
+      "stage": 1,
+      "timestamp": 1677247635.0,
+      "idleCurrencyAmount": {
+        "value": 841.8243304933403,
+        "degree": 4,
+        "__class__": "IdleGameNumber"
+      },
+      "characters": [
+        {
+          "id": "workshop_1",
+          "productionProgress": 0.16849388193366752,
+          "rechargeProgress": -1.0,
+          "level": 200,
+          "managerLevel": 3,
+          "stockAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "currentProduceAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "__class__": "IdleGameCharacterState"
+        },
+        {
+          "id": "workshop_2",
+          "productionProgress": 0.8111938895414115,
+          "rechargeProgress": -1.0,
+          "level": 187,
+          "managerLevel": 3,
+          "stockAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "currentProduceAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "__class__": "IdleGameCharacterState"
+        },
+        {
+          "id": "workshop_3",
+          "productionProgress": 0.25523527213090685,
+          "rechargeProgress": -1.0,
+          "level": 100,
+          "managerLevel": 3,
+          "stockAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "currentProduceAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "__class__": "IdleGameCharacterState"
+        },
+        {
+          "id": "workshop_4",
+          "productionProgress": 0.24690175450259733,
+          "rechargeProgress": -1.0,
+          "level": 50,
+          "managerLevel": 2,
+          "stockAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "currentProduceAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "__class__": "IdleGameCharacterState"
+        },
+        {
+          "id": "workshop_5",
+          "productionProgress": 0.010942776980231186,
+          "rechargeProgress": -1.0,
+          "level": 50,
+          "managerLevel": 2,
+          "stockAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "currentProduceAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "__class__": "IdleGameCharacterState"
+        },
+        {
+          "id": "transport_1",
+          "productionProgress": 0.2737239356001824,
+          "rechargeProgress": -1.0,
+          "level": 250,
+          "managerLevel": 4,
+          "stockAmount": {
+            "value": 22.735359933648326,
+            "degree": 5,
+            "__class__": "IdleGameNumber"
+          },
+          "currentProduceAmount": {
+            "value": 1.174405,
+            "degree": 4,
+            "__class__": "IdleGameNumber"
+          },
+          "__class__": "IdleGameCharacterState"
+        },
+        {
+          "id": "market_1",
+          "productionProgress": 0.261310745897471,
+          "rechargeProgress": -1.0,
+          "level": 299,
+          "managerLevel": 4,
+          "stockAmount": {
+            "value": 3.781198761754022,
+            "degree": 5,
+            "__class__": "IdleGameNumber"
+          },
+          "currentProduceAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "__class__": "IdleGameCharacterState"
+        }
+      ],
+      "taskHandler": {
+        "inProgressTasks": [
+          {
+            "id": 36,
+            "currentProgress": {
+              "value": 5.768608448112038,
+              "degree": 5,
+              "__class__": "IdleGameNumber"
+            },
+            "__class__": "IdleGameTaskState"
+          },
+          {
+            "id": 38,
+            "currentProgress": {
+              "value": 50.0,
+              "__class__": "IdleGameNumber"
+            },
+            "__class__": "IdleGameTaskState"
+          }
+        ],
+        "completedTasks": [
+          1,
+          4,
+          2,
+          5,
+          6,
+          7,
+          3,
+          8,
+          9,
+          11,
+          10,
+          14,
+          15,
+          12,
+          13,
+          16,
+          17,
+          18,
+          21,
+          22,
+          20,
+          23,
+          24,
+          19,
+          25,
+          28,
+          26,
+          27,
+          29,
+          31,
+          30,
+          32,
+          33,
+          35,
+          34,
+          37
+        ],
+        "taskOrder": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38
+        ],
+        "__class__": "IdleGameTaskHandlerState"
+      },
+      "__class__": "IdleGameState"
+    },
+    "requestClass": "IdleGameService",
+    "requestMethod": "getState",
+    "requestId": 13,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "context": "st_patricks_event",
+      "teaserPrizes": {
+        "grandPrizes": [
+          {
+            "prizeId": 4,
+            "totalNeedPoints": 25,
+            "currentPoints": 11,
+            "reward": {
+              "type": "consumable",
+              "subType": "boost_item",
+              "amount": 1,
+              "id": "coin_boost_large_8h",
+              "name": "100% Coin Boost",
+              "description": "Use this item to boost all your coin collections in the city by 100% for 8h!",
+              "iconAssetName": "boost_coins_large",
+              "flags": [
+                "grandPrize"
+              ],
+              "boostValue": 1.0,
+              "duration": 28800,
+              "value": 100,
+              "__class__": "TimedReward"
+            },
+            "type": "grand_prize",
+            "__class__": "GrandPrize"
+          },
+          {
+            "prizeId": 5,
+            "totalNeedPoints": 25,
+            "currentPoints": 11,
+            "reward": {
+              "type": "consumable",
+              "subType": "one_up_kit",
+              "amount": 1,
+              "id": "one_up_kit",
+              "name": "One Up Kit",
+              "description": "Upgrade an event building to the next age! Cannot surpass your current age.",
+              "iconAssetName": "one_up_kit",
+              "isHighlighted": true,
+              "flags": [
+                "uncommon",
+                "grandPrize"
+              ],
+              "boostValue": 1.0,
+              "__class__": "GenericReward"
+            },
+            "type": "event_pass",
+            "__class__": "GrandPrize"
+          }
+        ],
+        "context": "st_patricks_event",
+        "__class__": "GrandPrizes"
+      },
+      "claimablePrizes": 2,
+      "__class__": "EventPassPreview"
+    },
+    "requestClass": "EventPassService",
+    "requestMethod": "getPreview",
+    "requestId": 13,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "__class__": "Success"
+    },
+    "requestClass": "SeasonalEventService",
+    "requestMethod": "initMainComponentsData",
+    "requestId": 13,
+    "__class__": "ServerResponse"
+  }
+]

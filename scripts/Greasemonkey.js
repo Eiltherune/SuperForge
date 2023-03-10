@@ -132,9 +132,23 @@ function GM_setValue (name, value) {
  */
 function GM_getResourceText (resourceName) {
   let xmlHttpObject = new XMLHttpRequest()
-  const host = /response/.test(resourceName) ? 'responses' : /sidebar/.test(resourceName) ? 'static' :'json'
-  const ext = host === 'static' ? 'html' : 'json'
-  xmlHttpObject.open('GET', `https://eiltherune.github.io/SuperForge/${host}/${resourceName}.${ext}`, false)
+  const port = document.documentURI.match(/localhost:(\d*)/)[1]
+  let resources = {
+    'assetMap': `http://localhost:${port}/json/assetMap.json`,
+    'city_entities': `http://localhost:${port}/json/city_entities.json`,
+    'idle_game': `http://localhost:${port}/json/idle_game.json`,
+    'gb_data': `http://localhost:${port}/json/gb_data.json`,
+    'portraits': `http://localhost:${port}/xml/portraits.xml`,
+    'response_1': `http://localhost:${port}/responses/response_1.json`,
+    'response_2': `http://localhost:${port}/responses/response_2.json`,
+    'response_3': `http://localhost:${port}/responses/response_3.json`,
+    'response_4': `http://localhost:${port}/responses/response_4.json`,
+    'response_5': `http://localhost:${port}/responses/response_5.json`,
+    'response_6': `http://localhost:${port}/responses/response_6.json`,
+    'response_7': `http://localhost:${port}/responses/response_7.json`,
+    'forgeCSS': `http://localhost:${port}/css/SuperForge.css`
+  }
+  xmlHttpObject.open('GET', resources[resourceName], false)
   xmlHttpObject.send()
   return xmlHttpObject.responseText
 }
@@ -145,6 +159,9 @@ function GM_getResourceText (resourceName) {
  * @return {String} <code>greasemonkey-script:[script uuid]/[resource name]</code>
  */
 function GM_getResourceURL (resourceName) {
+  let dataUrl = window.btoa(encodeURIComponent(GM_getResourceText(resourceName)))
+  console.log(dataUrl)
+  return dataUrl
 }
 
 /**
@@ -196,7 +213,7 @@ function GM_setClipboard (text) {
  * @property [String] statusText Returns a string containing the response string returned by the HTTP server. This includes the entire text of the response message ("200 OK", for example).
  * @property [Object] context The same object passed into the original request.
  * @property [String] finalUrl The final URL requested, if Location redirects were followed.
- * @property [Boolean] lengthComputable (Available while in progress) Specifies whether or not the total size of the transfer is known.
+ * @property [Boolean] lengthComputable (Available while in progress) Specifies whether the total size of the transfer is known.
  * @property [Number] loaded (Available while in progress) The number of bytes transferred since the beginning of the operation. This doesn't include headers and other overhead, but only the content itself.
  * @property [Number] total (Available while in progress) The total number of bytes of content that will be transferred during the operation. If the total size is unknown, this value is zero.
  */
@@ -236,7 +253,7 @@ function GM_setClipboard (text) {
  * @property {Number} timeout The number of milliseconds to wait before terminating the call; zero (the default) means wait forever.
  * @property {GM_xmlhttpRequest_details_upload} upload Object containing optional function callbacks to monitor the upload of data.
  * @property {String} url The URL to make the request to. Must be an absolute URL, beginning with the scheme. As of version 0.8.6, the URL may be relative to the current page.
- * @property {String} user Optional. User name to use for authentication purposes.
+ * @property {String} user Optional. Username to use for authentication purposes.
  */
 
 /**

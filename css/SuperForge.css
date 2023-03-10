@@ -1,0 +1,103 @@
+#game_body {
+    height: 100vh;
+}
+#container {
+    float: left;
+    width: calc(100% - 300px);
+}
+
+.info-panel{
+    background-color: #282828;
+    color: aliceblue;
+    float: right;
+    font-family: Arial, sans-serif;
+    font-size: .75em;
+    height: 100%;
+    width: 300px;
+}
+.panel-h1 {
+    font-size: 2em;
+}
+.h2 {
+    font-size: 1.5em;
+}
+.h3 {
+    font-size: 1.2em;
+}
+.right {
+    text-align: right;
+}
+.data-panel {
+    height: calc(100% - 50px);
+}
+.panel {
+    padding-top: 20px;
+}
+.hidden {
+    display: none;
+}
+.menu-panel{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Courier New", monospace;
+    height: 50px;
+}
+.menu-button {
+    flex: 1 1 auto;
+}
+.data-table {
+    display: table;
+    width: 300px
+}
+.tableRow {
+    display: table-row;
+}
+.tableHeader {
+    display: table-row;
+}
+.tableHeaderCell {
+    display: table-cell;
+}
+.section {
+    margin-top: 10px;
+}
+.playerInfo {
+    display: table-row;
+
+}
+.playerAvatar {
+    width: 48px;
+    position: relative;
+}
+.playerGuild {
+    width: 48px;
+    position: relative;
+}
+.playerName {
+    padding-left: 10px;
+    font-size: 1.5em;
+}
+.columnNames{
+    font-size: 1.25em;
+    display: table-row;
+    height: 20px;
+}
+
+.gbIcon, .gbLevel {    width: 10%;}
+.gbProgress {    width: 40%;}
+.gbRank, .gbStatus {    width: 20%;}
+.tableRow div, .columnNames div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tableRow .gbIcon {
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    background-size: 250% 250%;
+    background-repeat: no-repeat;
+}
+.negative {
+    color: red;
+}

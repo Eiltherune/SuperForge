@@ -1,0 +1,619 @@
+[
+  {
+    "responseData": true,
+    "requestClass": "MessageService",
+    "requestMethod": "newMessage",
+    "requestId": 19,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "time": 1677337784,
+      "__class__": "Time"
+    },
+    "requestClass": "TimeService",
+    "requestMethod": "updateTime",
+    "requestId": 19,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "resources": {
+        "stars": 20,
+        "winter_reindeer": 0,
+        "winter_master_key_parts": 0,
+        "wildlife_coins": 200,
+        "wildlife_booster_hammer": 4,
+        "wildlife_booster_color_changer": 2,
+        "wildlife_booster_color_destroyer": 1,
+        "filters": 135,
+        "anniversary_energy": 110,
+        "flavorants": 17,
+        "packaging": 47,
+        "fall_ingredient_apples": 3,
+        "forge_bowl_footballs": 250,
+        "fall_ingredient_pumpkins": 3,
+        "fall_ingredient_chocolate": 3,
+        "fall_ingredient_cinnamon": 3,
+        "fall_ingredient_caramel": 3,
+        "summer_doubloons": 3,
+        "summer_piggy_bank": 0,
+        "archeology_gem_shard": 0,
+        "gemstones": 365,
+        "anniversary_blue_key": 0,
+        "anniversary_yellow_key": 0,
+        "anniversary_white_key": 0,
+        "ferroconcrete": 43,
+        "spring_lanterns": 200,
+        "convenience_food": 1298,
+        "gas": 300,
+        "robots": 100,
+        "electromagnets": 127,
+        "halloween_candle": 7,
+        "halloween_flashlight": 3,
+        "halloween_lantern": 1,
+        "halloween_ticket": 120,
+        "halloween_joker_sticker": 0,
+        "halloween_orb": 1,
+        "soccer_energy": 150,
+        "plastics": 173,
+        "bionics": 158,
+        "soccer_tournament_tickets": 3,
+        "cloth": 1075,
+        "st_patricks_pot_of_gold": 1730,
+        "glass": 1197,
+        "ropes": 1066,
+        "hero_rations": 200,
+        "halloween_wand": 7,
+        "halloween_broomstick": 3,
+        "halloween_cauldron": 1,
+        "halloween_candy": 120,
+        "diplomacy": 0,
+        "luxury_materials": 53,
+        "cypress": 294,
+        "bioplastics": 0,
+        "steel": 105,
+        "semiconductors": 50,
+        "ai_data": 0,
+        "paper_batteries": 0,
+        "transester_gas": 0,
+        "nanowire": 0,
+        "summer_compass": 0,
+        "winter_matches": 0,
+        "renewable_resources": 65,
+        "dna_data": 6,
+        "corals": 0,
+        "pearls": 0,
+        "biolight": 0,
+        "artificial_scales": 0,
+        "plankton": 0,
+        "textiles": 2791,
+        "machineparts": 5382,
+        "limestone": 369,
+        "petroleum": 4569,
+        "asbestos": 5196,
+        "tinplate": 3639,
+        "explosives": 5608,
+        "alabaster": 155,
+        "fertilizer": 1787,
+        "paintings": 0,
+        "brass": 2500,
+        "trade_coins": 100746,
+        "wool": 0,
+        "archeology_brush": 7,
+        "archeology_shovel": 3,
+        "archeology_dynamite": 1,
+        "archeology_scroll": 120,
+        "dye": 616,
+        "soy": 0,
+        "castle_points": 476305,
+        "sandstone": 257,
+        "pvp_arena_attempt": 5,
+        "total_population": 43545,
+        "instruments": 0,
+        "armor": 0,
+        "marble": 1623,
+        "wine": 387,
+        "silk": 3234,
+        "expansions": 0,
+        "medals": 157929,
+        "horns": 0,
+        "biogeochemical_data": 0,
+        "purified_water": 0,
+        "ebony": 927,
+        "nanoparticles": 0,
+        "algae": 0,
+        "superconductors": 0,
+        "lead": 859,
+        "salt": 1402,
+        "talc": 1452,
+        "mead": 0,
+        "honey": 914,
+        "total_japanese": 0,
+        "japanese": 0,
+        "basalt": 2059,
+        "total_vikings": 0,
+        "granite": 642,
+        "koban_coins": 0,
+        "gems": 434,
+        "brick": 1455,
+        "vikings": 0,
+        "gold": 855,
+        "premium": 7,
+        "population": 43096,
+        "axes": 0,
+        "wire": 5167,
+        "copper_coins": 0,
+        "paper": 5673,
+        "coffee": 3028,
+        "bronze": 2086,
+        "tavern_silver": 281228,
+        "rubber": 2964,
+        "herbs": 1745,
+        "gunpowder": 2172,
+        "coke": 2180,
+        "porcelain": 2709,
+        "negotiation_game_turn": 0,
+        "tar": 3116,
+        "whaleoil": 2505,
+        "strategy_points": 147,
+        "wildlife_pop_moves": 0,
+        "wildlife_tickets": 4,
+        "money": 608607079,
+        "supplies": 50129446,
+        "guild_expedition_attempt": 8
+      },
+      "__class__": "Resources"
+    },
+    "requestClass": "ResourceService",
+    "requestMethod": "getPlayerResources",
+    "requestId": 19,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "resources": {
+        "guild_expedition_attempt": 1677337669,
+        "strategy_points": 1677336523,
+        "soccer_tournament_tickets": 1677337784,
+        "wildlife_tickets": 1677337784
+      },
+      "__class__": "ResourceAutoRefill"
+    },
+    "requestClass": "ResourceService",
+    "requestMethod": "getPlayerAutoRefills",
+    "requestId": 19,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "id": 16808828,
+      "name": "Druid Hut Selection Kit",
+      "description": "Choose between an upgrade kit or the base building for the Druid Hut",
+      "inStock": 1,
+      "item": {
+        "selectionKitId": "selection_kit_PAT23A",
+        "__class__": "SelectionKitPayload"
+      },
+      "itemAssetName": "selection_kit_PAT23A",
+      "exchangeBaseValue": {
+        "minValues": {
+          "trade_coins": 1215.0,
+          "gemstones": 1.5840000000000003
+        },
+        "maxValues": {
+          "trade_coins": 1215.0,
+          "gemstones": 2.376
+        },
+        "__class__": "ItemExchangeValue"
+      },
+      "locked": true,
+      "sortPriority": [
+        3
+      ],
+      "__class__": "InventoryItem"
+    },
+    "requestClass": "InventoryService",
+    "requestMethod": "getItem",
+    "requestId": 19,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": [
+      6578452,
+      28
+    ],
+    "requestClass": "InventoryService",
+    "requestMethod": "getItemAmount",
+    "requestId": 19,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "id": 16808829,
+      "name": "Celtic Trees Selection Kit",
+      "description": "Choose between three different Celtic Trees",
+      "inStock": 1,
+      "item": {
+        "selectionKitId": "selection_kit_celtic_trees",
+        "__class__": "SelectionKitPayload"
+      },
+      "itemAssetName": "selection_kit_celtic_trees",
+      "exchangeBaseValue": {
+        "minValues": {
+          "trade_coins": 2700.0,
+          "gemstones": 3.52
+        },
+        "maxValues": {
+          "trade_coins": 2700.0,
+          "gemstones": 5.279999999999999
+        },
+        "__class__": "ItemExchangeValue"
+      },
+      "locked": true,
+      "sortPriority": [
+        3
+      ],
+      "__class__": "InventoryItem"
+    },
+    "requestClass": "InventoryService",
+    "requestMethod": "getItem",
+    "requestId": 19,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "id": 16808830,
+      "name": "Celtic Farmstead Selection Kit",
+      "description": "Choose between an upgrade kit or the base building for the Celtic Farmstead",
+      "inStock": 1,
+      "item": {
+        "selectionKitId": "selection_kit_celtic_farmstead",
+        "__class__": "SelectionKitPayload"
+      },
+      "itemAssetName": "selection_kit_celtic_farmstead",
+      "exchangeBaseValue": {
+        "minValues": {
+          "trade_coins": 1012.5000000000001,
+          "gemstones": 1.3200000000000003
+        },
+        "maxValues": {
+          "trade_coins": 1012.5000000000001,
+          "gemstones": 1.9800000000000002
+        },
+        "__class__": "ItemExchangeValue"
+      },
+      "locked": true,
+      "sortPriority": [
+        3
+      ],
+      "__class__": "InventoryItem"
+    },
+    "requestClass": "InventoryService",
+    "requestMethod": "getItem",
+    "requestId": 19,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "id": 16808831,
+      "name": "Mountain Reserve Selection Kit",
+      "description": "Choose between an upgrade kit or the base building for the Mountain Reserve.",
+      "inStock": 1,
+      "item": {
+        "selectionKitId": "selection_kit_mountain_reserve",
+        "__class__": "SelectionKitPayload"
+      },
+      "itemAssetName": "selection_kit_mountain_reserve",
+      "exchangeBaseValue": {
+        "minValues": {
+          "trade_coins": 1350.0,
+          "gemstones": 1.76
+        },
+        "maxValues": {
+          "trade_coins": 1350.0,
+          "gemstones": 2.6399999999999997
+        },
+        "__class__": "ItemExchangeValue"
+      },
+      "locked": true,
+      "sortPriority": [
+        3
+      ],
+      "__class__": "InventoryItem"
+    },
+    "requestClass": "InventoryService",
+    "requestMethod": "getItem",
+    "requestId": 19,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "reward": {
+        "amount": 1,
+        "flags": [],
+        "totalAmount": 105,
+        "rewards": [
+          {
+            "type": "consumable",
+            "subType": "selection_kit",
+            "amount": 1,
+            "id": "selection_kit_PAT23A",
+            "name": "Druid Hut Selection Kit",
+            "description": "Choose between an upgrade kit or the base building for the Druid Hut",
+            "iconAssetName": "selection_kit_PAT23A",
+            "flags": [
+              "epic"
+            ],
+            "boostValue": 1.0,
+            "__class__": "GenericReward"
+          },
+          {
+            "type": "consumable",
+            "subType": "renovation_kit",
+            "amount": 1,
+            "id": "renovation_kit",
+            "name": "Renovation Kit",
+            "description": "Upgrade an event building to your current age!",
+            "iconAssetName": "renovation_kit",
+            "isHighlighted": true,
+            "flags": [
+              "rare"
+            ],
+            "boostValue": 1.0,
+            "__class__": "GenericReward"
+          },
+          {
+            "type": "consumable",
+            "subType": "selection_kit",
+            "amount": 1,
+            "id": "selection_kit_celtic_trees",
+            "name": "Celtic Trees Selection Kit",
+            "description": "Choose between three different Celtic Trees",
+            "iconAssetName": "selection_kit_celtic_trees",
+            "flags": [
+              "epic"
+            ],
+            "boostValue": 1.0,
+            "__class__": "GenericReward"
+          },
+          {
+            "type": "consumable",
+            "subType": "selection_kit",
+            "amount": 1,
+            "id": "selection_kit_celtic_farmstead",
+            "name": "Celtic Farmstead Selection Kit",
+            "description": "Choose between an upgrade kit or the base building for the Celtic Farmstead",
+            "iconAssetName": "selection_kit_celtic_farmstead",
+            "flags": [
+              "epic"
+            ],
+            "boostValue": 1.0,
+            "__class__": "GenericReward"
+          },
+          {
+            "type": "good",
+            "subType": "all_ProgressiveEra",
+            "amount": 20,
+            "id": "goods#each#CurrentEra#20",
+            "name": "100 Goods",
+            "description": "20 of each good from your age!",
+            "iconAssetName": "random_goods",
+            "flags": [],
+            "boostValue": 1.0,
+            "totalAmount": 100,
+            "__class__": "GenericReward"
+          },
+          {
+            "type": "consumable",
+            "subType": "selection_kit",
+            "amount": 1,
+            "id": "selection_kit_mountain_reserve",
+            "name": "Mountain Reserve Selection Kit",
+            "description": "Choose between an upgrade kit or the base building for the Mountain Reserve.",
+            "iconAssetName": "selection_kit_mountain_reserve",
+            "isHighlighted": true,
+            "flags": [
+              "epic"
+            ],
+            "boostValue": 1.0,
+            "__class__": "GenericReward"
+          }
+        ],
+        "__class__": "GenericRewardSet"
+      },
+      "context": "st_patricks_event",
+      "__class__": "CollectedRewardSet"
+    },
+    "requestClass": "RewardService",
+    "requestMethod": "collectRewardSet",
+    "requestId": 19,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "id": 123021,
+      "context": "st_patricks_event",
+      "options": [
+        {
+          "reward": {
+            "type": "consumable",
+            "subType": "boost_item",
+            "amount": 1,
+            "id": "defender_boost_large_8h",
+            "name": "30% Defender Boost",
+            "description": "Use this item to grant your defending units a 30% boost to their defense values for 8h.",
+            "iconAssetName": "boost_defend_large",
+            "flags": [],
+            "boostValue": 1.0,
+            "duration": 28800,
+            "value": 30,
+            "__class__": "TimedReward"
+          },
+          "__class__": "RewardDeckOption"
+        },
+        {
+          "reward": {
+            "type": "consumable",
+            "subType": "selection_kit",
+            "amount": 1,
+            "id": "selection_kit_druid_temple",
+            "name": "Druid Temple Selection Kit",
+            "description": "Choose between an upgrade kit for the Druid Temple or the Druid Temple base building.",
+            "iconAssetName": "selection_kit_druid_temple",
+            "isHighlighted": true,
+            "flags": [
+              "epic"
+            ],
+            "boostValue": 1.0,
+            "__class__": "GenericReward"
+          },
+          "__class__": "RewardDeckOption"
+        },
+        {
+          "reward": {
+            "type": "consumable",
+            "subType": "selection_kit",
+            "amount": 1,
+            "id": "selection_kit_celtic_farmstead",
+            "name": "Celtic Farmstead Selection Kit",
+            "description": "Choose between an upgrade kit or the base building for the Celtic Farmstead",
+            "iconAssetName": "selection_kit_celtic_farmstead",
+            "flags": [
+              "epic"
+            ],
+            "boostValue": 1.0,
+            "__class__": "GenericReward"
+          },
+          "__class__": "RewardDeckOption"
+        },
+        {
+          "reward": {
+            "type": "building",
+            "subType": "D_ProgressiveEra_Deco5",
+            "amount": 1,
+            "id": "building_premium_deco",
+            "name": "Equestrian Statue",
+            "description": "More happiness: This is the best decoration of your age!",
+            "iconAssetName": "decoration",
+            "isHighlighted": true,
+            "flags": [
+              "uncommon"
+            ],
+            "boostValue": 1.0,
+            "__class__": "GenericReward"
+          },
+          "__class__": "RewardDeckOption"
+        },
+        {
+          "reward": {
+            "type": "good",
+            "subType": "all_ProgressiveEra",
+            "amount": 20,
+            "id": "goods#each#CurrentEra#20",
+            "name": "100 Goods",
+            "description": "20 of each good from your age!",
+            "iconAssetName": "random_goods",
+            "flags": [],
+            "boostValue": 1.0,
+            "totalAmount": 100,
+            "__class__": "GenericReward"
+          },
+          "__class__": "RewardDeckOption"
+        },
+        {
+          "reward": {
+            "type": "consumable",
+            "subType": "selection_kit",
+            "amount": 1,
+            "id": "selection_kit_mountain_reserve",
+            "name": "Mountain Reserve Selection Kit",
+            "description": "Choose between an upgrade kit or the base building for the Mountain Reserve.",
+            "iconAssetName": "selection_kit_mountain_reserve",
+            "isHighlighted": true,
+            "flags": [
+              "epic"
+            ],
+            "boostValue": 1.0,
+            "__class__": "GenericReward"
+          },
+          "__class__": "RewardDeckOption"
+        }
+      ],
+      "pickCost": [
+        {
+          "resources": {
+            "st_patricks_pot_of_gold": 50
+          },
+          "__class__": "Resources"
+        },
+        {
+          "resources": {
+            "st_patricks_pot_of_gold": 100
+          },
+          "__class__": "Resources"
+        },
+        {
+          "resources": {
+            "st_patricks_pot_of_gold": 200
+          },
+          "__class__": "Resources"
+        },
+        {
+          "resources": {
+            "st_patricks_pot_of_gold": 400
+          },
+          "__class__": "Resources"
+        },
+        {
+          "resources": {
+            "st_patricks_pot_of_gold": 1000
+          },
+          "__class__": "Resources"
+        },
+        {
+          "resources": {
+            "st_patricks_pot_of_gold": 2000
+          },
+          "__class__": "Resources"
+        }
+      ],
+      "pickedPositions": [],
+      "completionReward": {
+        "type": "consumable",
+        "subType": "selection_kit",
+        "amount": 1,
+        "id": "selection_kit_PAT23A",
+        "name": "Druid Hut Selection Kit",
+        "description": "Choose between an upgrade kit or the base building for the Druid Hut",
+        "iconAssetName": "selection_kit_PAT23A",
+        "flags": [
+          "epic"
+        ],
+        "boostValue": 1.0,
+        "__class__": "GenericReward"
+      },
+      "canFinish": true,
+      "pickAllCost": {
+        "resources": {
+          "st_patricks_pot_of_gold": 2800
+        },
+        "__class__": "Resources"
+      },
+      "__class__": "RewardDeck"
+    },
+    "requestClass": "RewardDeckService",
+    "requestMethod": "getDeck",
+    "requestId": 19,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "__class__": "Success"
+    },
+    "requestClass": "RewardDeckService",
+    "requestMethod": "pickAllOptions",
+    "requestId": 19,
+    "__class__": "ServerResponse"
+  }
+]

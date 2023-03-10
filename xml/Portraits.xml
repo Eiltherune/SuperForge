@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	// Default portrait IDs
+	<portrait name="portrait_id_1" src="portrait_001"/>
+	<portrait name="portrait_id_2" src="portrait_002"/>
+	<portrait name="portrait_id_3" src="portrait_003"/>
+	<portrait name="portrait_id_4" src="portrait_004"/>
+	<portrait name="portrait_id_5" src="portrait_005"/>
+	<portrait name="portrait_id_6" src="portrait_006"/>
+	<portrait name="portrait_id_7" src="portrait_007"/>
+	<portrait name="portrait_id_8" src="portrait_008"/>
+	<portrait name="portrait_id_9" src="portrait_009"/>
+	<portrait name="portrait_id_10" src="portrait_010"/>
+	<portrait name="portrait_id_11" src="portrait_011"/>
+	<portrait name="portrait_id_12" src="portrait_012"/>
+	<portrait name="portrait_id_13" src="portrait_013"/>
+	<portrait name="portrait_id_14" src="portrait_014"/>
+	<portrait name="portrait_id_15" src="portrait_015"/>
+	<portrait name="portrait_id_16" src="portrait_016"/>
+	<portrait name="portrait_id_17" src="portrait_017"/>
+	<portrait name="portrait_id_18" src="portrait_018"/>
+	<portrait name="portrait_id_19" src="portrait_019"/>
+	<portrait name="portrait_id_20" src="portrait_020"/>
+	<portrait name="portrait_id_21" src="portrait_021"/>
+	<portrait name="portrait_id_22" src="portrait_022"/>
+	<portrait name="portrait_id_23" src="portrait_023"/>
+	<portrait name="portrait_id_24" src="portrait_024"/>
+	<portrait name="portrait_id_25" src="portrait_025"/>
+	<portrait name="portrait_id_26" src="portrait_026"/>
+	<portrait name="portrait_id_27" src="portrait_027"/>
+	<portrait name="portrait_id_28" src="portrait_028"/>
+	<portrait name="portrait_id_29" src="portrait_029"/>
+	<portrait name="portrait_id_30" src="portrait_030"/>
+	<portrait name="portrait_id_31" src="portrait_031"/>
+	<portrait name="portrait_id_32" src="portrait_032"/>
+	<portrait name="portrait_id_33" src="portrait_033"/>
+	<portrait name="portrait_id_34" src="portrait_034"/>
+	<portrait name="portrait_id_35" src="portrait_035"/>
+	<portrait name="portrait_id_36" src="portrait_036"/>
+	<portrait name="portrait_id_37" src="portrait_037"/>
+	<portrait name="portrait_id_38" src="portrait_038"/>
+
+	// Additional portrait IDs coming from backend at start or on quest completed
+	// i.e. christmas avatars
+	<portrait name="addon_portrait_id_frosty" src="portrait_039"/>
+	<portrait name="addon_portrait_id_samantha" src="portrait_040"/>
+	<portrait name="addon_portrait_id_santa" src="portrait_041"/>
+	<portrait name="addon_portrait_id_easter_avatar_female" src="portrait_059"/>
+	<portrait name="addon_portrait_id_easter_avatar_male" src="portrait_060"/>
+	<portrait name="addon_portrait_id_alison" src="portrait_061"/>
+	<portrait name="addon_portrait_id_daniel" src="portrait_062"/>
+	<portrait name="addon_portrait_id_jodido" src="portrait_063"/>
+	<portrait name="addon_portrait_id_barthelemy" src="portrait_064"/>
+	<portrait name="addon_portrait_id_greva_darn" src="portrait_065"/>
+	<portrait name="addon_portrait_id_josephine" src="portrait_066"/>
+	<portrait name="addon_portrait_id_bob" src="portrait_067"/>
+	<portrait name="addon_portrait_id_bruce" src="portrait_068"/>
+	<portrait name="addon_portrait_id_bettie" src="portrait_069"/>
+	<portrait name="addon_portrait_id_mahatma" src="portrait_070"/>
+	<portrait name="addon_portrait_id_nefertiti" src="portrait_071"/>
+	<portrait name="addon_portrait_id_unknown" src="portrait_unknown"/>
+	<portrait name="addon_portrait_id_bogdan" src="portrait_083"/>
+	<portrait name="addon_portrait_id_celeas" src="portrait_084"/>
+	<portrait name="addon_portrait_id_frank" src="portrait_085"/>
+	<portrait name="addon_portrait_id_franka" src="portrait_086"/>
+	<portrait name="addon_portrait_id_karl" src="portrait_087"/>
+	<portrait name="addon_portrait_id_victoria" src="portrait_088"/>
+	<portrait name="addon_portrait_id_rose" src="portrait_101"/>
+	<portrait name="addon_portrait_id_jack" src="portrait_102"/>
+	<portrait name="addon_portrait_id_old_rose" src="portrait_103"/>
+	<portrait name="addon_portrait_id_dead_jack" src="portrait_104"/>
+	<portrait name="addon_portrait_id_betty" src="portrait_105"/>
+	<portrait name="addon_portrait_id_hugh" src="portrait_106"/>
+	<portrait name="addon_portrait_id_amelia" src="portrait_119"/>
+	<portrait name="addon_portrait_id_jane" src="portrait_120"/>
+	<portrait name="addon_portrait_id_david" src="portrait_121"/>
+	<portrait name="addon_portrait_id_nelson" src="portrait_122"/>
+	<portrait name="addon_portrait_id_makeda" src="portrait_123"/>
+	<portrait name="addon_portrait_id_shaka" src="portrait_124"/>
+	<portrait name="addon_portrait_id_count" src="portrait_137"/>
+	<portrait name="addon_portrait_id_countess" src="portrait_138"/>
+	<portrait name="addon_portrait_id_astrid" src="portrait_139"/>
+	<portrait name="addon_portrait_id_charles" src="portrait_140"/>
+	<portrait name="addon_portrait_id_robin" src="portrait_151"/>
+	<portrait name="addon_portrait_id_marian" src="portrait_152"/>
+	<portrait name="addon_portrait_id_sheriff" src="portrait_153"/>
+
+	// Easter 2015
+	<portrait name="addon_portrait_id_janis" src="portrait_155"/>
+	<portrait name="addon_portrait_id_jimi" src="portrait_156"/>
+
+	// Summer 2015
+	<portrait name="addon_portrait_id_mata" src="portrait_157"/>
+	<portrait name="addon_portrait_id_lawrence" src="portrait_158"/>
+	<portrait name="addon_portrait_id_jones" src="portrait_159"/>
+	<portrait name="addon_portrait_id_delilah" src="portrait_160"/>
+	<portrait name="addon_portrait_id_rajah" src="portrait_161"/>
+	<portrait name="addon_portrait_id_frida" src="portrait_162"/>
+
+	// Anwar 2015
+	<portrait name="addon_portrait_id_anwar" src="portrait_163"/>
+
+	// Columbus 2015
+	<portrait name="addon_portrait_id_columbus" src="portrait_176"/>
+
+	// Halloween 2015
+	<portrait name="addon_portrait_id_zombie" src="portrait_177"/>
+	<portrait name="addon_portrait_id_zombette" src="portrait_178"/>
+
+	// Winter 2015
+	<portrait name="addon_portrait_id_amy" src="portrait_179"/>
+	<portrait name="addon_portrait_id_jim" src="portrait_180"/>
+
+    // Winter 2016
+	<portrait name="addon_portrait_id_buddy" src="portrait_225"/>
+	<portrait name="addon_portrait_id_jovie" src="portrait_226"/>
+
+	 // Winter 2018
+	<portrait name="addon_portrait_id_alexander" src="portrait_306"/>
+	<portrait name="addon_portrait_id_anastasiya" src="portrait_307"/>
+
+	//Historical Events
+	<portrait name="addon_portrait_id_martin" src="portrait_181"/>
+	<portrait name="addon_portrait_id_gregory" src="portrait_182"/>
+	<portrait name="addon_portrait_id_isadora" src="portrait_183"/>
+	<portrait name="addon_portrait_id_mary" src="portrait_184"/>
+	<portrait name="addon_portrait_id_sissi" src="portrait_185"/>
+	<portrait name="addon_portrait_id_jacques" src="portrait_186"/>
+	<portrait name="addon_portrait_id_joseph" src="portrait_187"/>
+	<portrait name="addon_portrait_id_caesar" src="portrait_188"/>
+	<portrait name="addon_portrait_id_cleopatra" src="portrait_189"/>
+	<portrait name="addon_portrait_id_marcus_antonius" src="portrait_190"/>
+	<portrait name="addon_portrait_id_yuri" src="portrait_193"/>
+	<portrait name="addon_portrait_id_garin" src="portrait_227"/>
+
+	// Easter 2016
+	<portrait name="addon_portrait_id_sinatra" src="portrait_191"/>
+	<portrait name="addon_portrait_id_jackie" src="portrait_192"/>
+
+	// May Day 2016
+	<portrait name="addon_portrait_id_mayday_hilde" src="portrait_194"/>
+	<portrait name="addon_portrait_id_mayday_male" src="portrait_195"/>
+	<portrait name="addon_portrait_id_mayday_female" src="portrait_196"/>
+
+	// Soccer Cup 2016
+	<portrait name="addon_portrait_id_camila" src="portrait_197"/>
+	<portrait name="addon_portrait_id_paul" src="portrait_198"/>
+
+	// Summer 2016
+	<portrait name="addon_portrait_id_wahine" src="portrait_211"/>
+	<portrait name="addon_portrait_id_kekoa" src="portrait_212"/>
+	<portrait name="addon_portrait_id_kamalii" src="portrait_213"/>
+	<portrait name="addon_portrait_id_kapuna" src="portrait_214"/>
+
+	// Fall 2016
+	<portrait name="addon_portrait_id_bernard" src="portrait_215"/>
+	<portrait name="addon_portrait_id_ruth" src="portrait_216"/>
+
+	// Halloween 2016
+	<portrait name="addon_portrait_id_mummy_male" src="portrait_217"/>
+	<portrait name="addon_portrait_id_mummy_female" src="portrait_218"/>
+
+	// Ballon Flight 2016
+	<portrait name="addon_portrait_id_jacques" src="portrait_223"/>
+	<portrait name="addon_portrait_id_joseph" src="portrait_224"/>
+
+	// Carnival 2017
+	<portrait name="addon_portrait_id_carnival_female" src="portrait_228"/>
+	<portrait name="addon_portrait_id_carnival_male" src="portrait_229"/>
+
+	// Einstein 2017
+	<portrait name="addon_portrait_id_einstein" src="portrait_230"/>
+
+	// Spring Event 2017
+	<portrait name="addon_portrait_id_samurai" src="portrait_241"/>
+	<portrait name="addon_portrait_id_hanako" src="portrait_242"/>
+
+	// May Day 2017
+	<portrait name="addon_portrait_id_mayday_halvard" src="portrait_243"/>
+
+	// Arthur Conan Doyle 2017
+	<portrait name="addon_portrait_id_doyle" src="portrait_245"/>
+
+	// Shah Jahan 2017
+	<portrait name="addon_portrait_id_shahjahan" src="portrait_246"/>
+
+	// Summer 2017
+	<portrait name="addon_portrait_id_maharaja" src="portrait_247"/>
+	<portrait name="addon_portrait_id_maharani" src="portrait_248"/>
+
+	// Marylin Monroe 2017
+	<portrait name="addon_portrait_id_monroe" src="portrait_249"/>
+
+	// Galileo 2017
+	<portrait name="addon_portrait_id_galileo" src="portrait_250"/>
+
+	// Fall 2017
+	<portrait name="addon_portrait_id_eddie" src="portrait_251"/>
+
+	// Gandhi 2017
+	<portrait name="addon_portrait_id_gandhi" src="portrait_253"/>
+
+	// Halloween 2017
+	<portrait name="addon_portrait_id_jeoff" src="portrait_254"/>
+	<portrait name="addon_portrait_id_jenny" src="portrait_255"/>
+
+	// Rosa Parks 2017
+	<portrait name="addon_portrait_id_rosa" src="portrait_256"/>
+
+	// Winter 2017
+	<portrait name="addon_portrait_id_olga" src="portrait_260"/>
+	<portrait name="addon_portrait_id_sven" src="portrait_261"/>
+
+	// Forge Bowl 2018
+	<portrait name="addon_portrait_id_ashley" src="portrait_262"/>
+	<portrait name="addon_portrait_id_becky" src="portrait_263"/>
+	<portrait name="addon_portrait_id_brian" src="portrait_264"/>
+	<portrait name="addon_portrait_id_johnson" src="portrait_265"/>
+	<portrait name="addon_portrait_id_kimberly" src="portrait_266"/>
+	<portrait name="addon_portrait_id_tony" src="portrait_267"/>
+
+		// Forge Bowl 2019
+	<portrait name="addon_portrait_id_champion" src="portrait_308"/>
+	<portrait name="addon_portrait_id_reporter" src="portrait_309"/>
+
+	// Carnival 2018
+	<portrait name="addon_portrait_id_carnival_sun" src="portrait_271"/>
+	<portrait name="addon_portrait_id_carnival_moon" src="portrait_272"/>
+
+	// Napoleon 2018
+	<portrait name="addon_portrait_id_napoleon" src="portrait_273"/>
+
+	// Spring 2018
+	<portrait name="addon_portrait_id_kitsune" src="portrait_274"/>
+	<portrait name="addon_portrait_id_ninja" src="portrait_275"/>
+
+	// Historical 2018
+	<portrait name="addon_portrait_id_cleopatra_2" src="portrait_276"/>
+	<portrait name="addon_portrait_id_van_gogh" src="portrait_277"/>
+	<portrait name="addon_portrait_id_sacajawea" src="portrait_278"/>
+	<portrait name="addon_portrait_id_genghis" src="portrait_279"/>
+	<portrait name="addon_portrait_id_curie" src="portrait_280"/>
+	<portrait name="addon_portrait_id_shakespeare" src="portrait_281"/>
+	<portrait name="addon_portrait_id_wu" src="portrait_282"/>
+
+	// Soccer 2018
+	<portrait name="addon_portrait_id_fan" src="portrait_286"/>
+	<portrait name="addon_portrait_id_goalkeeper" src="portrait_287"/>
+	<portrait name="addon_portrait_id_player" src="portrait_288"/>
+	<portrait name="addon_portrait_id_referee" src="portrait_289"/>
+
+	// Summer 2018
+	<portrait name="addon_portrait_id_voodoo_priestess" src="portrait_290"/>
+	<portrait name="addon_portrait_id_pirate_captain" src="portrait_291"/>
+	<portrait name="addon_portrait_id_caribbean_woman" src="portrait_292"/>
+	<portrait name="addon_portrait_id_caribbean_man" src="portrait_293"/>
+
+		// Fall 2018
+	<portrait name="addon_portrait_id_fall_hunter" src="portrait_294"/>
+	<portrait name="addon_portrait_id_fall_miller" src="portrait_295"/>
+	<portrait name="addon_portrait_id_fall_woman" src="portrait_296"/>
+	<portrait name="addon_portrait_id_fall_man" src="portrait_297"/>
+
+	// Industrial Age avatars:
+	<portrait name="portrait_id_42" src="portrait_042"/>
+	<portrait name="portrait_id_43" src="portrait_043"/>
+	<portrait name="portrait_id_44" src="portrait_044"/>
+	<portrait name="portrait_id_45" src="portrait_045"/>
+	<portrait name="portrait_id_46" src="portrait_046"/>
+	<portrait name="portrait_id_47" src="portrait_047"/>
+	<portrait name="portrait_id_48" src="portrait_048"/>
+	<portrait name="portrait_id_49" src="portrait_049"/>
+	<portrait name="portrait_id_50" src="portrait_050"/>
+	<portrait name="portrait_id_51" src="portrait_051"/>
+	<portrait name="portrait_id_52" src="portrait_052"/>
+	<portrait name="portrait_id_53" src="portrait_053"/>
+	<portrait name="portrait_id_54" src="portrait_054"/>
+	<portrait name="portrait_id_55" src="portrait_055"/>
+	<portrait name="portrait_id_56" src="portrait_056"/>
+	<portrait name="portrait_id_57" src="portrait_057"/>
+	<portrait name="portrait_id_58" src="portrait_058"/>
+
+	// Progressive Era avatars:
+	<portrait name="portrait_id_72" src="portrait_072"/>
+	<portrait name="portrait_id_73" src="portrait_073"/>
+	<portrait name="portrait_id_74" src="portrait_074"/>
+	<portrait name="portrait_id_75" src="portrait_075"/>
+	<portrait name="portrait_id_76" src="portrait_076"/>
+	<portrait name="portrait_id_77" src="portrait_077"/>
+	<portrait name="portrait_id_78" src="portrait_078"/>
+	<portrait name="portrait_id_79" src="portrait_079"/>
+	<portrait name="portrait_id_80" src="portrait_080"/>
+	<portrait name="portrait_id_81" src="portrait_081"/>
+	<portrait name="portrait_id_82" src="portrait_082"/>
+
+	// Modern Era avatars:
+	<portrait name="portrait_id_89" src="portrait_089"/>
+	<portrait name="portrait_id_90" src="portrait_090"/>
+	<portrait name="portrait_id_91" src="portrait_091"/>
+	<portrait name="portrait_id_92" src="portrait_092"/>
+	<portrait name="portrait_id_93" src="portrait_093"/>
+	<portrait name="portrait_id_94" src="portrait_094"/>
+	<portrait name="portrait_id_95" src="portrait_095"/>
+	<portrait name="portrait_id_96" src="portrait_096"/>
+	<portrait name="portrait_id_97" src="portrait_097"/>
+	<portrait name="portrait_id_98" src="portrait_098"/>
+	<portrait name="portrait_id_99" src="portrait_099"/>
+	<portrait name="portrait_id_100" src="portrait_100"/>
+
+	// Postmodern Era avatars:
+	<portrait name="portrait_id_107" src="portrait_107"/>
+	<portrait name="portrait_id_108" src="portrait_108"/>
+	<portrait name="portrait_id_109" src="portrait_109"/>
+	<portrait name="portrait_id_110" src="portrait_110"/>
+	<portrait name="portrait_id_111" src="portrait_111"/>
+	<portrait name="portrait_id_112" src="portrait_112"/>
+	<portrait name="portrait_id_113" src="portrait_113"/>
+	<portrait name="portrait_id_114" src="portrait_114"/>
+	<portrait name="portrait_id_115" src="portrait_115"/>
+	<portrait name="portrait_id_116" src="portrait_116"/>
+	<portrait name="portrait_id_117" src="portrait_117"/>
+	<portrait name="portrait_id_118" src="portrait_118"/>
+
+	// Contemporary Era avatars:
+	<portrait name="portrait_id_125" src="portrait_125"/>
+	<portrait name="portrait_id_126" src="portrait_126"/>
+	<portrait name="portrait_id_127" src="portrait_127"/>
+	<portrait name="portrait_id_128" src="portrait_128"/>
+	<portrait name="portrait_id_129" src="portrait_129"/>
+	<portrait name="portrait_id_130" src="portrait_130"/>
+	<portrait name="portrait_id_131" src="portrait_131"/>
+	<portrait name="portrait_id_132" src="portrait_132"/>
+	<portrait name="portrait_id_133" src="portrait_133"/>
+	<portrait name="portrait_id_134" src="portrait_134"/>
+	<portrait name="portrait_id_135" src="portrait_135"/>
+	<portrait name="portrait_id_136" src="portrait_136"/>
+
+	// Tomorrow Era avatars:
+	<portrait name="portrait_id_141" src="portrait_141"/>
+	<portrait name="portrait_id_142" src="portrait_142"/>
+	<portrait name="portrait_id_143" src="portrait_143"/>
+	<portrait name="portrait_id_144" src="portrait_144"/>
+	<portrait name="portrait_id_145" src="portrait_145"/>
+	<portrait name="portrait_id_146" src="portrait_146"/>
+	<portrait name="portrait_id_147" src="portrait_147"/>
+	<portrait name="portrait_id_148" src="portrait_148"/>
+	<portrait name="portrait_id_149" src="portrait_149"/>
+	<portrait name="portrait_id_150" src="portrait_150"/>
+	<portrait name="portrait_id_154" src="portrait_154"/>
+
+	// Future Era avatars:
+	<portrait name="portrait_id_164" src="portrait_164"/>
+	<portrait name="portrait_id_165" src="portrait_165"/>
+	<portrait name="portrait_id_166" src="portrait_166"/>
+	<portrait name="portrait_id_167" src="portrait_167"/>
+	<portrait name="portrait_id_168" src="portrait_168"/>
+	<portrait name="portrait_id_169" src="portrait_169"/>
+	<portrait name="portrait_id_170" src="portrait_170"/>
+	<portrait name="portrait_id_171" src="portrait_171"/>
+	<portrait name="portrait_id_172" src="portrait_172"/>
+	<portrait name="portrait_id_173" src="portrait_173"/>
+	<portrait name="portrait_id_174" src="portrait_174"/>
+	<portrait name="portrait_id_175" src="portrait_175"/>
+
+	// Arctic Future avatars:
+	<portrait name="portrait_id_199" src="portrait_199"/>
+	<portrait name="portrait_id_200" src="portrait_200"/>
+	<portrait name="portrait_id_201" src="portrait_201"/>
+	<portrait name="portrait_id_202" src="portrait_202"/>
+	<portrait name="portrait_id_203" src="portrait_203"/>
+	<portrait name="portrait_id_204" src="portrait_204"/>
+	<portrait name="portrait_id_205" src="portrait_205"/>
+	<portrait name="portrait_id_206" src="portrait_206"/>
+	<portrait name="portrait_id_207" src="portrait_207"/>
+	<portrait name="portrait_id_208" src="portrait_208"/>
+	<portrait name="portrait_id_209" src="portrait_209"/>
+	<portrait name="portrait_id_210" src="portrait_210"/>
+
+	// New default avatars:
+	<portrait name="portrait_id_219" src="portrait_219"/>
+	<portrait name="portrait_id_220" src="portrait_220"/>
+	<portrait name="portrait_id_221" src="portrait_221"/>
+	<portrait name="portrait_id_222" src="portrait_222"/>
+
+	// HackerOne Winner
+	<portrait name="portrait_id_pat_h1_contest" src="portrait_354"/>
+
+	// Oceanic Future avatars:
+	<portrait name="addon_portrait_id_231" src="portrait_231"/>
+	<portrait name="addon_portrait_id_232" src="portrait_232"/>
+	<portrait name="addon_portrait_id_233" src="portrait_233"/>
+	<portrait name="addon_portrait_id_234" src="portrait_234"/>
+	<portrait name="addon_portrait_id_235" src="portrait_235"/>
+	<portrait name="addon_portrait_id_236" src="portrait_236"/>
+	<portrait name="addon_portrait_id_237" src="portrait_237"/>
+	<portrait name="addon_portrait_id_238" src="portrait_238"/>
+	<portrait name="addon_portrait_id_239" src="portrait_239"/>
+	<portrait name="addon_portrait_id_240" src="portrait_240"/>
+	<portrait name="addon_portrait_id_244" src="portrait_244"/>
+	<portrait name="addon_portrait_id_251" src="portrait_251"/>
+	<portrait name="addon_portrait_id_252" src="portrait_252"/>
+	<portrait name="addon_portrait_id_257" src="portrait_257"/>
+	<portrait name="addon_portrait_id_258" src="portrait_258"/>
+	<portrait name="addon_portrait_id_259" src="portrait_259"/>
+	<portrait name="addon_portrait_id_268" src="portrait_268"/>
+	<portrait name="addon_portrait_id_269" src="portrait_269"/>
+	<portrait name="addon_portrait_id_270" src="portrait_270"/>
+
+	// Virtual Future avatars:
+	<portrait name="addon_portrait_id_283" src="portrait_283"/>
+	<portrait name="addon_portrait_id_284" src="portrait_284"/>
+	<portrait name="addon_portrait_id_285" src="portrait_285"/>
+	<portrait name="addon_portrait_id_298" src="portrait_298"/>
+	<portrait name="addon_portrait_id_299" src="portrait_299"/>
+	<portrait name="addon_portrait_id_300" src="portrait_300"/>
+	<portrait name="addon_portrait_id_310" src="portrait_310"/>
+	<portrait name="addon_portrait_id_311" src="portrait_311"/>
+	<portrait name="addon_portrait_id_312" src="portrait_312"/>
+
+
+	// Halloween 2019
+	<portrait name="addon_portrait_id_ghost_bride" src="portrait_301"/>
+	<portrait name="addon_portrait_id_librarian" src="portrait_302"/>
+	<portrait name="addon_portrait_id_witch" src="portrait_303"/>
+	<portrait name="addon_portrait_id_zombie_female" src="portrait_304"/>
+	<portrait name="addon_portrait_id_wolfman" src="portrait_305"/>
+	<portrait name="addon_portrait_id_skully" src="portrait_338"/>
+	<portrait name="addon_portrait_id_death" src="portrait_339"/>
+	<portrait name="addon_portrait_id_death_druid" src="portrait_346"/>
+
+	// Carnaval 2019
+	<portrait name="addon_portrait_id_carnival_fire" src="portrait_313"/>
+	<portrait name="addon_portrait_id_carnival_green" src="portrait_314"/>
+
+	// Spring 2019
+	<portrait name="addon_portrait_id_spring_ayaka" src="portrait_315"/>
+	<portrait name="addon_portrait_id_spring_haru" src="portrait_316"/>
+
+	// Mars
+	<portrait name="addon_portrait_id_317" src="portrait_317"/>
+	<portrait name="addon_portrait_id_318" src="portrait_318"/>
+	<portrait name="addon_portrait_id_319" src="portrait_319"/>
+	<portrait name="addon_portrait_id_320" src="portrait_320"/>
+	<portrait name="addon_portrait_id_321" src="portrait_321"/>
+	<portrait name="addon_portrait_id_322" src="portrait_322"/>
+	<portrait name="addon_portrait_id_323" src="portrait_323"/>
+	<portrait name="addon_portrait_id_324" src="portrait_324"/>
+
+	// Archeology
+	<portrait name="addon_portrait_id_archeology_eliza" src="portrait_325"/>
+	<portrait name="addon_portrait_id_archeology_henry" src="portrait_326"/>
+
+	// Soccer 2019
+	<portrait name="addon_portrait_id_soccer_defense" src="portrait_327"/>
+	<portrait name="addon_portrait_id_soccer_fan_male" src="portrait_328"/>
+	<portrait name="addon_portrait_id_soccer_winner" src="portrait_329"/>
+	<portrait name="addon_portrait_id_soccer_commentator" src="portrait_330"/>
+
+	// Summer 2019
+	<portrait name="addon_portrait_id_pirate_queen" src="portrait_331"/>
+	<portrait name="addon_portrait_id_pirate_first_mate" src="portrait_332"/>
+	<portrait name="addon_portrait_id_pirate_governess" src="portrait_333"/>
+	<portrait name="addon_portrait_id_pirate_chef" src="portrait_334"/>
+
+	// Fall 2019
+	<portrait name="addon_portrait_id_fall_baker" src="portrait_335"/>
+	<portrait name="addon_portrait_id_fall_luca" src="portrait_336"/>
+	<portrait name="addon_portrait_id_fall_winner_couple" src="portrait_337"/>
+
+	// Antiques Dealer
+	<portrait name="addon_portrait_id_antiques_dealer_ken" src="portrait_340"/>
+	<portrait name="addon_portrait_id_antiques_dealer_nala" src="portrait_341"/>
+	<portrait name="addon_portrait_id_antiques_dealer_richard" src="portrait_342"/>
+	<portrait name="addon_portrait_id_antiques_dealer_prisha" src="portrait_343"/>
+	<portrait name="addon_portrait_id_antiques_dealer_gary" src="portrait_344"/>
+	<portrait name="addon_portrait_id_antiques_dealer_hazel" src="portrait_345"/>
+
+	// Winter 2019
+	<portrait name="addon_portrait_id_winter_porter" src="portrait_347"/>
+	<portrait name="addon_portrait_id_winter_passenger" src="portrait_348"/>
+
+	// ForgeBowl 2020
+	<portrait name="addon_portrait_id_bowl_singer" src="portrait_349"/>
+	<portrait name="addon_portrait_id_bowl_player_warren" src="portrait_350"/>
+	<portrait name="addon_portrait_id_bowl_cal" src="portrait_351"/>
+
+	// St.Patrick's 2020
+	<portrait name="addon_portrait_id_pat_cathleen" src="portrait_352"/>
+	<portrait name="addon_portrait_id_pat_micky" src="portrait_353"/>
+
+	// Saab
+	<portrait name="addon_portrait_id_355" src="portrait_355"/>
+	<portrait name="addon_portrait_id_356" src="portrait_356"/>
+	<portrait name="addon_portrait_id_357" src="portrait_357"/>
+	<portrait name="addon_portrait_id_358" src="portrait_358"/>
+	<portrait name="addon_portrait_id_359" src="portrait_359"/>
+	<portrait name="addon_portrait_id_360" src="portrait_360"/>
+	<portrait name="addon_portrait_id_361" src="portrait_361"/>
+	<portrait name="addon_portrait_id_362" src="portrait_362"/>
+	<portrait name="addon_portrait_id_363" src="portrait_363"/>
+
+	// Spring 2020
+	<portrait name="addon_portrait_id_spring_yoshiro" src="portrait_364"/>
+	<portrait name="addon_portrait_id_spring_mayumi" src="portrait_365"/>
+	<portrait name="addon_portrait_id_spring_winner_kikuko" src="portrait_366"/>
+
+	// Archeology 2020
+	<portrait name="addon_portrait_id_archeology_conrad" src="portrait_367"/>
+	<portrait name="addon_portrait_id_archeology_johanna" src="portrait_368"/>
+	<portrait name="addon_portrait_id_archeology_morey" src="portrait_369"/>
+
+	// Soccer 2020
+	<portrait name="addon_portrait_id_soccer_fan_league_reward" src="portrait_370"/>
+	<portrait name="addon_portrait_id_soccer_manager" src="portrait_371"/>
+	<portrait name="addon_portrait_id_soccer_midfielder" src="portrait_372"/>
+	<portrait name="addon_portrait_id_soccer_tournament_firstplace" src="portrait_373"/>
+	<portrait name="addon_portrait_id_soccer_tournament_secondplace" src="portrait_374"/>
+	<portrait name="addon_portrait_id_soccer_tournament_thirdplace" src="portrait_375"/>
+	<portrait name="addon_portrait_id_soccer_tournament_topten" src="portrait_376"/>
+
+	// Summer 2020
+	<portrait name="addon_portrait_id_mermaid" src="portrait_377"/>
+	<portrait name="addon_portrait_id_pirate_king" src="portrait_378"/>
+	<portrait name="addon_portrait_id_pirate_lookout" src="portrait_379"/>
+	<portrait name="addon_portrait_id_voodoo_priest" src="portrait_380"/>
+
+	// Fall 2020
+	<portrait name="addon_portrait_id_fall_zoe" src="portrait_381"/>
+	<portrait name="addon_portrait_id_fall_chris" src="portrait_382"/>
+	<portrait name="addon_portrait_id_fall_charlie" src="portrait_383"/>
+
+	// Halloween 2020
+	<portrait name="addon_portrait_id_halloween_fortune" src="portrait_384"/>
+	<portrait name="addon_portrait_id_halloween_creepy_clown" src="portrait_387"/>
+	<portrait name="addon_portrait_id_halloween_the_illustrated_man" src="portrait_388"/>
+
+	// winter 2020
+	<portrait name="addon_portrait_id_winter_camila" src="portrait_389"/>
+	<portrait name="addon_portrait_id_winter_mark" src="portrait_390"/>
+	<portrait name="addon_portrait_id_winter_bianca" src="portrait_391"/>
+
+	// ForgeBowl 2021
+	<portrait name="addon_portrait_id_bowl_noah" src="portrait_392"/>
+	<portrait name="addon_portrait_id_bowl_stephanie" src="portrait_393"/>
+	<portrait name="addon_portrait_id_bowl_kaylee" src="portrait_394"/>
+
+	// St.Patrick's 2021
+	<portrait name="addon_portrait_id_pat_bagpipe_player" src="portrait_395"/>
+	<portrait name="addon_portrait_id_pat_fairy_queen" src="portrait_396"/>
+
+	// SpaceAgeVenus
+	<portrait name="addon_portrait_id_398" src="portrait_398"/>
+	<portrait name="addon_portrait_id_399" src="portrait_399"/>
+	<portrait name="addon_portrait_id_400" src="portrait_400"/>
+	<portrait name="addon_portrait_id_401" src="portrait_401"/>
+	<portrait name="addon_portrait_id_402" src="portrait_402"/>
+	<portrait name="addon_portrait_id_403" src="portrait_403"/>
+	<portrait name="addon_portrait_id_404" src="portrait_404"/>
+	<portrait name="addon_portrait_id_405" src="portrait_405"/>
+	<portrait name="addon_portrait_id_406" src="portrait_406"/>
+
+	// Spring 2021
+	<portrait name="addon_portrait_id_spring_saki" src="portrait_407"/>
+	<portrait name="addon_portrait_id_spring_haruto" src="portrait_408"/>
+	<portrait name="addon_portrait_id_spring_winner_himari" src="portrait_409"/>
+	<portrait name="addon_portrait_id_spring_winner_miyu" src="portrait_410"/>
+
+	// Archeology 2021
+	<portrait name="addon_portrait_id_archeology_ava" src="portrait_411"/>
+	<portrait name="addon_portrait_id_archeology_oscar" src="portrait_412"/>
+	<portrait name="addon_portrait_id_archeology_bardsley" src="portrait_413"/>
+	<portrait name="addon_portrait_id_archeology_margot" src="portrait_414"/>
+
+	// Soccer 2021
+	<portrait name="addon_portrait_id_soccer_fan_margaret" src="portrait_415"/>
+	<portrait name="addon_portrait_id_soccer_fan_george" src="portrait_416"/>
+	<portrait name="addon_portrait_id_soccer_manager_league_reward" src="portrait_417"/>
+	<portrait name="addon_portrait_id_soccer_tournament21_firstplace" src="portrait_418"/>
+	<portrait name="addon_portrait_id_soccer_tournament21_secondplace" src="portrait_419"/>
+	<portrait name="addon_portrait_id_soccer_tournament21_thirdplace" src="portrait_420"/>
+	<portrait name="addon_portrait_id_soccer_tournament21_topten" src="portrait_421"/>
+
+	// Castle System
+	<portrait name="addon_portrait_id_castle_system_lothar" src="portrait_422"/>
+	<portrait name="addon_portrait_id_castle_system_swanhild" src="portrait_423"/>
+	<portrait name="addon_portrait_id_castle_system_anselm" src="portrait_424"/>
+	<portrait name="addon_portrait_id_castle_system_odilie" src="portrait_425"/>
+	<portrait name="addon_portrait_id_castle_system_jasib" src="portrait_426"/>
+	<portrait name="addon_portrait_id_castle_system_dhayl" src="portrait_427"/>
+	<portrait name="addon_portrait_id_castle_system_ansley" src="portrait_428"/>
+	<portrait name="addon_portrait_id_castle_system_odella" src="portrait_429"/>
+	<portrait name="addon_portrait_id_castle_system_dunstan" src="portrait_430"/>
+	<portrait name="addon_portrait_id_castle_system_blossom" src="portrait_431"/>
+	<portrait name="addon_portrait_id_castle_system_royce" src="portrait_432"/>
+	<portrait name="addon_portrait_id_castle_system_fairley" src="portrait_433"/>
+
+	// Wild Life 2021
+	<portrait name="addon_portrait_id_wildlife_halona" src="portrait_434"/>
+	<portrait name="addon_portrait_id_wildlife_cooper" src="portrait_435"/>
+	<portrait name="addon_portrait_id_wildlife_irene" src="portrait_436"/>
+
+	// Summer 2021
+	<portrait name="addon_portrait_id_summer_riel" src="portrait_437"/>
+	<portrait name="addon_portrait_id_summer_donya" src="portrait_438"/>
+
+	// Emissary Avatars
+	<portrait name="addon_portrait_id_cop_vikings_leif" src="portrait_439"/>
+	<portrait name="addon_portrait_id_cop_vikings_harald" src="portrait_440"/>
+	<portrait name="addon_portrait_id_cop_vikings_gudrid" src="portrait_441"/>
+	<portrait name="addon_portrait_id_cop_vikings_freydis" src="portrait_442"/>
+	<portrait name="addon_portrait_id_cop_vikings_erik" src="portrait_443"/>
+	<portrait name="addon_portrait_id_cop_vikings_aud" src="portrait_444"/>
+	<portrait name="addon_portrait_id_cop_mughals_shah_jahan" src="portrait_445"/>
+	<portrait name="addon_portrait_id_cop_mughals_mumtaz_mahal" src="portrait_446"/>
+	<portrait name="addon_portrait_id_cop_mughals_hamida_banu_begum" src="portrait_447"/>
+	<portrait name="addon_portrait_id_cop_mughals_babur" src="portrait_448"/>
+	<portrait name="addon_portrait_id_cop_japanese_gozen" src="portrait_449"/>
+	<portrait name="addon_portrait_id_cop_japanese_shingen" src="portrait_450"/>
+	<portrait name="addon_portrait_id_cop_japanese_oichi" src="portrait_451"/>
+	<portrait name="addon_portrait_id_cop_japanese_nobunaga" src="portrait_452"/>
+	<portrait name="addon_portrait_id_cop_egyptians_mentuhotep" src="portrait_453"/>
+	<portrait name="addon_portrait_id_cop_egyptians_maatkare" src="portrait_454"/>
+	<portrait name="addon_portrait_id_cop_egyptians_hemetre" src="portrait_455"/>
+	<portrait name="addon_portrait_id_cop_egyptians_euclid" src="portrait_456"/>
+	<portrait name="addon_portrait_id_cop_aztecs_ichtaca" src="portrait_457"/>
+	<portrait name="addon_portrait_id_cop_aztecs_chimalli" src="portrait_458"/>
+	<portrait name="addon_portrait_id_cop_aztecs_amoxtli" src="portrait_459"/>
+	<portrait name="addon_portrait_id_cop_aztecs_acamapichtli" src="portrait_460"/>
+
+	// Fall 2021
+	<portrait name="addon_portrait_id_fall_tom" src="portrait_461"/>
+	<portrait name="addon_portrait_id_fall_finn" src="portrait_462"/>
+	<portrait name="addon_portrait_id_fall_anna" src="portrait_463"/>
+	<portrait name="addon_portrait_id_fall_hank" src="portrait_464"/>
+
+	// Halloween 2021
+	<portrait name="addon_portrait_id_halloween_strongman" src="portrait_465"/>
+	<portrait name="addon_portrait_id_halloween_lola" src="portrait_466"/>
+	<portrait name="addon_portrait_id_halloween_medina" src="portrait_467"/>
+	<portrait name="addon_portrait_id_halloween_harlequin" src="portrait_468"/>
+
+	// winter 2021
+	<portrait name="addon_portrait_id_winter_waiter" src="portrait_469"/>
+	<portrait name="addon_portrait_id_winter_winnie" src="portrait_470"/>
+	<portrait name="addon_portrait_id_winter_cordon" src="portrait_471"/>
+
+		// ForgeBowl 2022
+	<portrait name="addon_portrait_id_bowl_bull_mascot" src="portrait_472"/>
+	<portrait name="addon_portrait_id_bowl_eagle_mascot" src="portrait_473"/>
+	<portrait name="addon_portrait_id_bowl_dog_mascot" src="portrait_474"/>
+	<portrait name="addon_portrait_id_bowl_roy" src="portrait_475"/>
+	<portrait name="addon_portrait_id_bowl_sarah" src="portrait_476"/>
+
+	// St. Patrick's 2022
+	<portrait name="addon_portrait_id_pat_clodagh" src="portrait_477"/>
+	<portrait name="addon_portrait_id_pat_darragh" src="portrait_478"/>
+
+	// SpaceAgeJupiterMoon
+	<portrait name="addon_portrait_id_479" src="portrait_479"/>
+	<portrait name="addon_portrait_id_480" src="portrait_480"/>
+	<portrait name="addon_portrait_id_481" src="portrait_481"/>
+	<portrait name="addon_portrait_id_482" src="portrait_482"/>
+	<portrait name="addon_portrait_id_483" src="portrait_483"/>
+	<portrait name="addon_portrait_id_484" src="portrait_484"/>
+	<portrait name="addon_portrait_id_485" src="portrait_485"/>
+	<portrait name="addon_portrait_id_486" src="portrait_486"/>
+	<portrait name="addon_portrait_id_487" src="portrait_487"/>
+
+	// Castle System - Update
+	<portrait name="addon_portrait_id_castle_system_sibusiso" src="portrait_488"/>
+	<portrait name="addon_portrait_id_castle_system_mariama" src="portrait_489"/>
+	<portrait name="addon_portrait_id_castle_system_olivia" src="portrait_490"/>
+	<portrait name="addon_portrait_id_castle_system_garein" src="portrait_491"/>
+	<portrait name="addon_portrait_id_castle_system_blaise" src="portrait_492"/>
+	<portrait name="addon_portrait_id_castle_system_autumn" src="portrait_493"/>
+
+	// Forge Ages 2022
+	<portrait name="addon_portrait_id_ages_party_king" src="portrait_494"/>
+	<portrait name="addon_portrait_id_ages_party_queen" src="portrait_495"/>
+	<portrait name="addon_portrait_id_ages_dora" src="portrait_496"/>
+	<portrait name="addon_portrait_id_ages_ronnie" src="portrait_497"/>
+
+	// Archeology 2022
+	<portrait name="addon_portrait_id_archeology_apprentice_archeologist" src="portrait_498"/>
+	<portrait name="addon_portrait_id_archeology_excavation_manager" src="portrait_499"/>
+	<portrait name="addon_portrait_id_archeology_scarab_king" src="portrait_500"/>
+	<portrait name="addon_portrait_id_archeology_aurora" src="portrait_501"/>
+
+	// Soccer 2022
+	<portrait name="addon_portrait_id_soccer_fan_valeria" src="portrait_502"/>
+	<portrait name="addon_portrait_id_soccer_fan_mega_fan" src="portrait_503"/>
+	<portrait name="addon_portrait_id_soccer_trainer_league_reward" src="portrait_504"/>
+	<portrait name="addon_portrait_id_soccer_tournament22_firstplace" src="portrait_505"/>
+	<portrait name="addon_portrait_id_soccer_tournament22_secondplace" src="portrait_506"/>
+	<portrait name="addon_portrait_id_soccer_tournament22_thirdplace" src="portrait_507"/>
+	<portrait name="addon_portrait_id_soccer_tournament22_topten" src="portrait_508"/>
+
+	// Wildlife 2022
+	<portrait name="addon_portrait_id_wildlife_charles" src="portrait_509"/>
+	<portrait name="addon_portrait_id_wildlife_anilde" src="portrait_510"/>
+
+	// Hero 2022
+	<portrait name="addon_portrait_id_hero_huntress" src="portrait_511"/>
+	<portrait name="addon_portrait_id_hero_crossbow" src="portrait_512"/>
+	<portrait name="addon_portrait_id_hero_dame" src="portrait_513"/>
+	<portrait name="addon_portrait_id_hero_knight" src="portrait_514"/>
+
+	// Summer 2022
+	<portrait name="addon_portrait_id_summer_bill" src="portrait_515"/>
+	<portrait name="addon_portrait_id_summer_sally" src="portrait_516"/>
+	<portrait name="addon_portrait_id_summer_dreadful" src="portrait_517"/>
+
+	// Fall 2022
+	<portrait name="addon_portrait_id_fall_grandma" src="portrait_518"/>
+	<portrait name="addon_portrait_id_fall_farmer" src="portrait_519"/>
+	<portrait name="addon_portrait_id_fall_oktoberfest" src="portrait_520"/>
+	<portrait name="addon_portrait_id_fall_maiden" src="portrait_521"/>
+
+	// Halloween 2022
+	<portrait name="addon_portrait_id_halloween_morrigan" src="portrait_522"/>
+	<portrait name="addon_portrait_id_halloween_aura" src="portrait_523"/>
+	<portrait name="addon_portrait_id_halloween_bellatrix" src="portrait_524"/>
+	<portrait name="addon_portrait_id_halloween_ichabod" src="portrait_525"/>
+
+	// Winter 2022
+	<portrait name="addon_portrait_id_winter_willy" src="portrait_526"/>
+	<portrait name="addon_portrait_id_winter_nicholas" src="portrait_527"/>
+	<portrait name="addon_portrait_id_winter_nutcracker" src="portrait_528"/>
+	<portrait name="addon_portrait_id_winter_snowman" src="portrait_529"/>
+	<portrait name="addon_portrait_id_winter_lady" src="portrait_530"/>
+
+	// ForgeBowl 2023
+	<portrait name="addon_portrait_id_bowl_farid" src="portrait_531"/>
+	<portrait name="addon_portrait_id_bowl_jacklyn" src="portrait_532"/>
+	<portrait name="addon_portrait_id_bowl_hugo" src="portrait_533"/>
+	<portrait name="addon_portrait_id_bowl_olivia" src="portrait_534"/>
+	<portrait name="addon_portrait_id_bowl_karam" src="portrait_535"/>
+	<portrait name="addon_portrait_id_bowl_imani" src="portrait_536"/>
+
+	// St. Patrick's 2023
+	<portrait name="addon_portrait_id_pat_red_beard" src="portrait_537"/>
+	<portrait name="addon_portrait_id_pat_pathfinder" src="portrait_538"/>
+	<portrait name="addon_portrait_id_pat_birdkeeper" src="portrait_539"/>
+	<portrait name="addon_portrait_id_pat_druid_woman" src="portrait_540"/>
+	<portrait name="addon_portrait_id_pat_irish_dancer" src="portrait_541"/>
+
+	// Innovation Pass Avatars
+	<portrait name="addon_portrait_id_poi_bert" src="portrait_542"/>
+	<portrait name="addon_portrait_id_poi_berta" src="portrait_543"/>
+
+	// Guild Expedition 5 Avatars
+	<portrait name="addon_portrait_id_gex5_quetzpallea" src="portrait_544"/>
+	<portrait name="addon_portrait_id_gex5_quetzalli" src="portrait_545"/>
+	<portrait name="addon_portrait_id_gex5_coatl" src="portrait_546"/>
+	<portrait name="addon_portrait_id_gex5_nahuatl" src="portrait_547"/>
+	<portrait name="addon_portrait_id_gex5_citlalicue" src="portrait_548"/>
+	<portrait name="addon_portrait_id_gex5_ahuatzi" src="portrait_549"/>
+	<portrait name="addon_portrait_id_gex5_patlee" src="portrait_550"/>
+	<portrait name="addon_portrait_id_gex5_teiuc" src="portrait_551"/>
+	<portrait name="addon_portrait_id_gex5_nochtli" src="portrait_552"/>
+	<portrait name="addon_portrait_id_gex5_eztli" src="portrait_553"/>
+	<portrait name="addon_portrait_id_gex5_ohtli" src="portrait_554"/>
+	<portrait name="addon_portrait_id_gex5_yolihuali" src="portrait_555"/>
+	<portrait name="addon_portrait_id_gex5_huitzilin" src="portrait_556"/>
+	<portrait name="addon_portrait_id_gex5_citlalee" src="portrait_557"/>
+	<portrait name="addon_portrait_id_gex5_necahual" src="portrait_558"/>
+	<portrait name="addon_portrait_id_gex5_chimalli" src="portrait_559"/>
+	<portrait name="addon_portrait_id_gex5_tonalnan" src="portrait_560"/>
+	<portrait name="addon_portrait_id_gex5_tonatiuh" src="portrait_561"/>
+
+	// Anniversary 2023
+	<portrait name="addon_portrait_id_anniversary_viktor" src="portrait_562"/>
+	<portrait name="addon_portrait_id_anniversary_elise" src="portrait_563"/>
+	<portrait name="addon_portrait_id_anniversary_hadwin" src="portrait_564"/>
+	<portrait name="addon_portrait_id_anniversary_akari" src="portrait_565"/>
+	<portrait name="addon_portrait_id_anniversary_calder" src="portrait_566"/>
+	<portrait name="addon_portrait_id_anniversary_nigel" src="portrait_567"/>
+
+	// Wildlife 2023
+	<portrait name="addon_portrait_id_wildlife_female_guard" src="portrait_568"/>
+	<portrait name="addon_portrait_id_wildlife_male_guard" src="portrait_569"/>
+	<portrait name="addon_portrait_id_wildlife_traditional_male" src="portrait_570"/>
+	<portrait name="addon_portrait_id_wildlife_traditional_female" src="portrait_571"/>
+	<portrait name="addon_portrait_id_wildlife_female_monk" src="portrait_572"/>
+	<portrait name="addon_portrait_id_wildlife_person_with_panda" src="portrait_573"/>
+
+</data>

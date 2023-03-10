@@ -1,0 +1,374 @@
+div.banner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: #ffefbf;
+    z-index: 110
+}
+
+div.banner span {
+    display: table-cell;
+    padding-left: 10px;
+    vertical-align: middle;
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+    color: #000;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+div.banner div {
+    position: relative;
+    background: url(https://foeus.innogamescdn.com/images/button_close.png) 0 0;
+    float: right;
+    top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 19px;
+    height: 19px;
+    cursor: pointer
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background: #0E1E2D
+}
+
+#container {
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    text-align: left;
+    position: relative
+}
+
+#game-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    background-color: #0e1e2d;
+    background-image: url(https://foeus.innogamescdn.com/images/game/frame/performance_image_bg_black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+#game-container.with-banner {
+    top: 45px;
+    height: calc(100% - 45px)
+}
+
+#game-container.size0 {
+    background-image: none
+}
+
+#game-container-centered {
+    margin: auto
+}
+
+.size0 #game-container-centered {
+    width: 100%;
+    height: 100%;
+    min-width: 950px;
+    min-height: 600px
+}
+
+#game-container-inner {
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+#foe-logo {
+    position: absolute;
+    left: 50%;
+    top: -92px;
+    transform: translate(-50%);
+    pointer-events: none
+}
+
+#openfl-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+#viewport-frame {
+    position: absolute;
+    left: -65px;
+    top: -37px;
+    width: calc(100% - 16px);
+    height: calc(100% - 170px);
+    pointer-events: none;
+    border-top: 200px solid;
+    border-right: 72px solid;
+    border-bottom: 40px solid;
+    border-left: 73px solid;
+    border-image-source: url(https://foeus.innogamescdn.com/images/game/frame/performance_window_frame.png);
+    border-image-slice: 200 72 40 73
+}
+
+.size0 #viewport-frame, .size0 #foe-logo {
+    display: none
+}
+
+#closePopup {
+    position: absolute;
+    background-image: url(https://foeus.innogamescdn.com/images/button_close.png);
+    width: 19px;
+    height: 19px;
+    top: 50%;
+    margin-top: -285px;
+    left: 50%;
+    margin-left: 360px;
+    cursor: pointer
+}
+
+#closeForumPopup {
+    position: absolute;
+    background: url(https://foeus.innogamescdn.com/images/button_close.png) 0 0;
+    width: 19px;
+    height: 19px;
+    top: 50%;
+    left: 50%;
+    margin-top: -264px;
+    margin-left: 375px;
+    cursor: pointer
+}
+
+#closeForumPopup:hover {
+    background-position: 0 100%
+}
+
+#shieldLoader {
+    position: absolute;
+    background-image: url(https://foeus.innogamescdn.com/images/shield_loader.gif);
+    width: 53px;
+    height: 68px;
+    top: 50%;
+    margin-top: -34px;
+    left: 50%;
+    margin-left: -20px
+}
+
+div.button {
+    background: url(https://foeus.innogamescdn.com/images/bt_return.png) no-repeat 0 0;
+    color: #f4dac2;
+    margin: 14px 0 0 74px;
+    padding: 4px;
+    float: left;
+    width: 250px;
+    height: 36px
+}
+
+div.button a {
+    color: inherit;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 95%;
+    font-weight: 700;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer
+}
+
+div.button:hover {
+    background-position: 0 -44px;
+    color: #fdf9f4
+}
+
+div.button:active {
+    background-position: 0 -88px;
+    color: #d4b192
+}
+
+div.guide {
+    display: none
+}
+
+div.html5 {
+    margin-top: 15px;
+    font-size: .85em
+}
+
+div.html5 span, img {
+    vertical-align: middle
+}
+
+a.html5Link {
+    color: #065ea2
+}
+
+#preloader {
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+
+#preloader div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    animation: fadein 2s
+}
+
+#preloader img {
+    display: block;
+    margin: auto
+}
+
+#spinner {
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite
+}
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes spin {
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes fadein {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.paperScroll {
+    background: url(https://foeus.innogamescdn.com/assets/page/maintenance/foe_window_paper_scroll-20d85bf24.png) no-repeat;
+    width: 446px;
+    height: 438px;
+    position: fixed;
+    left: calc(50vw - 223px);
+    top: calc(50vh - 319px)
+}
+
+.paperScrollContent {
+    position: absolute;
+    top: 144px;
+    left: 40px;
+    right: 40px;
+    color: #402410;
+    font-family: Arial, sans-serif;
+    text-align: center
+}
+
+.paperScrollTitle {
+    font-size: 16px;
+    font-weight: 700
+}
+
+.paperScrollIcon {
+    position: absolute;
+    top: 49px;
+    left: 126px;
+    right: 123px;
+    height: 119px
+}
+
+.paperScrollIcon img {
+    position: absolute;
+    inset: 0;
+    margin: auto
+}
+
+.paperScrollMessage {
+    position: absolute;
+    top: 176px
+}
+
+.paperScrollButton {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 257px;
+    margin: auto;
+    width: 131px;
+    height: 23px;
+    line-height: 23px;
+    font-size: 100%;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    color: #ffd9c2;
+    background-image: url(https://foeus.innogamescdn.com/images/button.png)
+}
+
+.paperScrollButton:hover {
+    background-position: 0 -23px
+}
+
+.paperScrollButton:active {
+    background-position: 0 -46px
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    background: #0E1E2D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    min-height: 100vh
+}
+
+#wrapper {
+    background: url(https://foeus.innogamescdn.com/assets/page/expired_page/foe_wallpaper-d8649e9a6.jpg) no-repeat center;
+    min-height: 100vh;
+    overflow: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}

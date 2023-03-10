@@ -1,21 +1,295 @@
 [
   {
+    "responseData": true,
+    "requestClass": "MessageService",
+    "requestMethod": "newMessage",
+    "requestId": 1099,
+    "__class__": "ServerResponse"
+  },
+  {
     "responseData": {
-      "time": 1675625588,
+      "time": 1677796824,
       "__class__": "Time"
     },
     "requestClass": "TimeService",
     "requestMethod": "updateTime",
-    "requestId": 4,
+    "requestId": 1099,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "context": "st_patricks_event",
+      "stage": 2,
+      "timestamp": 1677796824.0,
+      "idleCurrencyAmount": {
+        "value": 219.83750100001782,
+        "degree": 2,
+        "__class__": "IdleGameNumber"
+      },
+      "characters": [
+        {
+          "id": "workshop_1",
+          "productionProgress": 0.021750032901763916,
+          "rechargeProgress": -1.0,
+          "level": 50,
+          "managerLevel": 1,
+          "stockAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "currentProduceAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "__class__": "IdleGameCharacterState"
+        },
+        {
+          "id": "workshop_2",
+          "productionProgress": 0.7572000026702881,
+          "rechargeProgress": -1.0,
+          "level": 1,
+          "managerLevel": 2,
+          "stockAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "currentProduceAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "__class__": "IdleGameCharacterState"
+        },
+        {
+          "id": "workshop_3",
+          "productionProgress": 1.0,
+          "rechargeProgress": -1.0,
+          "stockAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "currentProduceAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "__class__": "IdleGameCharacterState"
+        },
+        {
+          "id": "workshop_4",
+          "productionProgress": 1.0,
+          "rechargeProgress": -1.0,
+          "stockAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "currentProduceAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "__class__": "IdleGameCharacterState"
+        },
+        {
+          "id": "workshop_5",
+          "productionProgress": 1.0,
+          "rechargeProgress": -1.0,
+          "stockAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "currentProduceAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "__class__": "IdleGameCharacterState"
+        },
+        {
+          "id": "transport_1",
+          "productionProgress": -1.0,
+          "rechargeProgress": 0.3998750150203705,
+          "level": 10,
+          "managerLevel": 1,
+          "stockAmount": {
+            "value": 364.6162744005567,
+            "degree": 2,
+            "__class__": "IdleGameNumber"
+          },
+          "currentProduceAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "__class__": "IdleGameCharacterState"
+        },
+        {
+          "id": "market_1",
+          "productionProgress": 0.4106500029563927,
+          "rechargeProgress": -1.0,
+          "level": 25,
+          "managerLevel": 1,
+          "stockAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "currentProduceAmount": {
+            "value": 0.0,
+            "__class__": "IdleGameNumber"
+          },
+          "__class__": "IdleGameCharacterState"
+        }
+      ],
+      "taskHandler": {
+        "inProgressTasks": [
+          {
+            "id": 41,
+            "currentProgress": {
+              "value": 1.0,
+              "__class__": "IdleGameNumber"
+            },
+            "__class__": "IdleGameTaskState"
+          },
+          {
+            "id": 44,
+            "currentProgress": {
+              "value": 1.0,
+              "__class__": "IdleGameNumber"
+            },
+            "__class__": "IdleGameTaskState"
+          },
+          {
+            "id": 46,
+            "currentProgress": {
+              "value": 12.329675,
+              "degree": 2,
+              "__class__": "IdleGameNumber"
+            },
+            "__class__": "IdleGameTaskState"
+          }
+        ],
+        "completedTasks": [
+          39,
+          40,
+          42,
+          43,
+          45
+        ],
+        "taskOrder": [
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76
+        ],
+        "__class__": "IdleGameTaskHandlerState"
+      },
+      "__class__": "IdleGameState"
+    },
+    "requestClass": "IdleGameService",
+    "requestMethod": "getState",
+    "requestId": 1099,
+    "__class__": "ServerResponse"
+  },
+  {
+    "responseData": {
+      "context": "st_patricks_event",
+      "unlocked": true,
+      "teaserPrizes": {
+        "grandPrizes": [
+          {
+            "prizeId": 4,
+            "totalNeedPoints": 25,
+            "currentPoints": 18,
+            "reward": {
+              "type": "consumable",
+              "subType": "boost_item",
+              "amount": 1,
+              "id": "coin_boost_large_8h",
+              "name": "100% Coin Boost",
+              "description": "Use this item to boost all your coin collections in the city by 100% for 8h!",
+              "iconAssetName": "boost_coins_large",
+              "flags": [
+                "grandPrize"
+              ],
+              "boostValue": 1.0,
+              "duration": 28800,
+              "value": 100,
+              "__class__": "TimedReward"
+            },
+            "type": "grand_prize",
+            "__class__": "GrandPrize"
+          },
+          {
+            "prizeId": 5,
+            "totalNeedPoints": 25,
+            "currentPoints": 18,
+            "reward": {
+              "type": "consumable",
+              "subType": "one_up_kit",
+              "amount": 1,
+              "id": "one_up_kit",
+              "name": "One Up Kit",
+              "description": "Upgrade an event building to the next age! Cannot surpass your current age.",
+              "iconAssetName": "one_up_kit",
+              "isHighlighted": true,
+              "flags": [
+                "uncommon",
+                "grandPrize"
+              ],
+              "boostValue": 1.0,
+              "__class__": "GenericReward"
+            },
+            "type": "event_pass",
+            "__class__": "GrandPrize"
+          }
+        ],
+        "context": "st_patricks_event",
+        "__class__": "GrandPrizes"
+      },
+      "claimablePrizes": 4,
+      "__class__": "EventPassPreview"
+    },
+    "requestClass": "EventPassService",
+    "requestMethod": "getPreview",
+    "requestId": 1099,
     "__class__": "ServerResponse"
   },
   {
     "responseData": {
       "__class__": "Success"
     },
-    "requestClass": "TrackingService",
-    "requestMethod": "trackLoginDone",
-    "requestId": 4,
+    "requestClass": "SeasonalEventService",
+    "requestMethod": "initMainComponentsData",
+    "requestId": 1099,
     "__class__": "ServerResponse"
   }
 ]
