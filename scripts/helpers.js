@@ -19,6 +19,8 @@ function $E(tag, classList=null, attributes={}) {
           element.style[style] = attributes.style[style]
         }
       }
+    } else if (attr === 'onclick') {
+      element.addEventListener('click', attributes.onclick)
     } else {
       element[attr] = attributes[attr]
     }
@@ -62,8 +64,8 @@ for (let line of GM_getResourceText('portraits').split('\n')) {
 
 function avatar(portrait) {
   return '/shared/avatars/' + portraits[portrait] + '.jpg'
-
 }
+
 
 /**
  * @typedef {Object} InnoResponse
@@ -83,7 +85,37 @@ class InnoResponse {
       this.responseData = data['responseData']
   }
 }
+class OtherPlayer {
+  constructor(data) {
+    this.rank = data['rank']
+    this.playerId = data['player_id']
+    this.avatar = data['avatar']
+    this.name = data['name']
+    this.clanId = data['clan_id']
+    if (this.clanId) {
+      this.clan = data['clan']['name']
+      this.clanFlag = data['clan']['flag']
+    }
+    this.active = data['is_active']
+    this.era = data['era']
+    if (data['is_friend'] || data['is_guild_member']) {
+      if (data['is_friend']) {
+        this.isFriend = true
+        this.incoming = data['incoming']
+      } else {
+        this.isGuildMember = true
+      }
+      this.activity = data['activity'] ? this.active : 0
+    }
+    if (data['is_neighbor']) {
+      this.isNeighbor = true
+      if (data['has_great_building'] && !(this.isFriend || this.isGuildMember)) {
+        this.greatBuildings = {}
+      }
+    }
 
+  }
+}
 function GBProgress (building) {
     this.playerId = building['player']['player_id']
     this.name = building['name']
@@ -168,9 +200,11 @@ class IdleGameTaskHandlerState {
   constructor(data, metadata, buildings) {
     this.CompletedTasks = data['completedTasks']
     this.InProgressTasks = []
-    data['inProgressTasks'].forEach((task) => {
-      this.InProgressTasks.push(new IdleGameTaskState(task, metadata, buildings))
-    })
+    if ('inProgressTasks' in data) {
+      data['inProgressTasks'].forEach((task) => {
+        this.InProgressTasks.push(new IdleGameTaskState(task, metadata, buildings))
+      })
+    }
     this.TaskOrder = data['taskOrder']
   }
 }
@@ -207,7 +241,6 @@ class IdleGameTaskState {
   
 function Countdown (element, targetTime) {
   let el = document.getElementById(`countdown-task-${element}`)
-  console.log(element)
   const interval = setInterval(function () {
     const totalDuration = targetTime - new Date().getTime()
     if (totalDuration <= 0) {
@@ -294,15 +327,20 @@ function IdleGameCharacterState (data, metadata) {
     this.baseProduction = IdleGameNumber({value: metadata['baseProductionValue'], degree: 'baseProductionDegree' in metadata ? metadata['baseProductionDegree'] : 0})
     let managerSpeed = 1
     let mProd = 1
-    let productionModifier = 0
+    let productionModifier = 1
     this.Producing = 0
   
     if (this.Level > 0) {
       metadata['rankProductionLevels'].forEach((threshold, index) => {
-        if (this.Level >= threshold) {productionModifier = metadata['rankProductionModifiers'][index]}
+        if (this.Level >= threshold) {productionModifier *= metadata['rankProductionModifiers'][index] + 1}
       })
+      if (this.Level > metadata['rankProductionLevels'][metadata['rankProductionLevels'].length-1]) {
+        let levelsOver = this.Level - metadata['rankProductionLevels'][metadata['rankProductionLevels'].length-1]
+        let endlessCount = Math.floor(levelsOver / metadata['rankProductionEndlessLevel'])
+        productionModifier *= Math.pow(metadata['rankProductionEndlessModifier']+1, endlessCount)
+      }
       let endlessModifier = 0
-      if (this.Level > metadata['rankProductionEndlessLevel']) {endlessModifier = metadata['rankProductionEndlessModifier']}
+
       if (this.Manager > 0) {
         metadata['bonuses'].forEach((level) => {
           if (level['level'] <= this.Manager) {
@@ -315,19 +353,21 @@ function IdleGameCharacterState (data, metadata) {
           }
         })
       }
-      this.Producing = (this.baseProduction + (this.baseProduction * (this.Level - 1))) * Math.pow(2, productionModifier) * mProd
+      this.Producing = (this.baseProduction + (this.baseProduction * (this.Level - 1))) * productionModifier * mProd
     }
+
     this.Speed = (metadata['productionDuration'] + metadata['rechargeDuration']) / managerSpeed
     this.YieldPS = this.Producing / this.Speed
   }
 
 function GameData () {
     this.LastUpdate = 0
-    this.Bonuses = {}
+    this.Bonuses = {Persistent: {}, Limited: {}}
     this.Boosts = {Timed: {}, Static: {}}
     this.Deposits = {}
     this.Castle = {Player: null, Overview: null}
     this.IdleGame = {}
+    this.Social = {Friends: {}, Guild: {}, Neighbors: {}}
   }
 
 
