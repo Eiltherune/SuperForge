@@ -368,6 +368,7 @@ function GameData () {
     this.Castle = {Player: null, Overview: null}
     this.IdleGame = {}
     this.Social = {Friends: {}, Guild: {}, Neighbors: {}}
+    this.Event = {}
   }
 
 

@@ -429,7 +429,7 @@ function EventModifierService (method, data) {
 }
 function EventPassService (method, data) {
   if (method === 'getPreview') {
-    let panel = $('#event-panel')
+    let panel = $('#event-panel .panel-content')
     // There is an active event, so load the appropriate sidebar
     switch (data['context']) {
       case 'anniversary_event':
@@ -782,9 +782,7 @@ function MessageService (method, data) {
 }
 
 function OtherPlayerService (method, data) {
-  if (method === 'updateActions') {
-  }
-  else if (method === 'getSocialList') {
+  if (method === 'getSocialList') {
     let socialKeys = {friends: 'Friends', neighbours: 'Neighbors', guildMembers: 'Guild'}
     for (let keyList in socialKeys) {
       data[keyList].forEach((otherPlayer) => {
@@ -793,6 +791,8 @@ function OtherPlayerService (method, data) {
     }
   }
   else if (method === 'getAwaitingFriendRequestCount') {
+  }
+  else if (method === 'updateActions') {
   }
   else if (method === 'getEventsPaginated') {
   }
