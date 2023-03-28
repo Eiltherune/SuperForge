@@ -13,7 +13,6 @@
 // @require      https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js
 // @require      https://raw.githubusercontent.com/caldwell/renderjson/master/renderjson.js
 // @require      https://raw.githubusercontent.com/Eiltherune/SuperForge/main/scripts/helpers.js
-// @require      https://raw.githubusercontent.com/Eiltherune/SuperForge/main/scripts/sniper.js
 // @resource     city_entities https://raw.githubusercontent.com/Eiltherune/SuperForge/main/json/city_entities.json
 // @resource     idle_game https://raw.githubusercontent.com/Eiltherune/SuperForge/main/json/idle_game.json
 // @resource     assetMap https://raw.githubusercontent.com/Eiltherune/SuperForge/main/json/assetmap.json
@@ -28,7 +27,7 @@ Set up core variables
 */
 let game_Data = new GameData()
 let gbData = JSON.parse(GM_getResourceText('gb_data'))
-localStorage.removeItem('game_Data');
+let old_gameData = localStorage.getItem('game_Data');
 
 (function () {
   $('#game_body')
@@ -41,7 +40,7 @@ localStorage.removeItem('game_Data');
         .append($($E('div', 'panel hidden', { id: 'leveler-panel' }))
           .append($($E('span', 'panel-h1', { text: 'Great Building Leveler' }))))
         .append($($E('div', 'panel', { id: 'sniper-panel' }))
-          .append($($E('span', 'panel-h1', { text: 'Sniping Tool' })))
+          .append($($E('div', 'title', { text: 'Great Building Sniper' })))
           .append($($E('div', 'panel-content'))))
         .append($($E('div', 'panel hidden', { id: 'gbg-panel' }))
           .append($($E('span', 'panel-h1', { text: 'Guild Battlegrounds' }))))
@@ -57,7 +56,8 @@ localStorage.removeItem('game_Data');
           .append($($E('span', 'panel-h1', { text: 'Market Overview' }))))
         .append($($E('div', 'panel hidden', { id: 'event-panel' }))
           .append($($E('span', 'panel-h1', { text: 'Event Overview' })))
-          .append($($E('div', 'panel-content')))))
+          .append($($E('div', 'panel-content'))))
+      )
       .append($($E('div', 'menu-panel'))
         .append($($E('button', 'menu-button', { text: 'Overview' })))
         .append($($E('button', 'menu-button hidden', { text: 'Plunder', disabled: true })))
@@ -69,7 +69,8 @@ localStorage.removeItem('game_Data');
         .append($($E('button', 'menu-button hidden', { text: 'Tavern', disabled: true })))
         .append($($E('button', 'menu-button hidden', { text: 'Army', disabled: true })))
         .append($($E('button', 'menu-button hidden', { text: 'Market', disabled: true })))
-        .append($($E('button', 'menu-button', { text: 'Event' }))))
+        .append($($E('button', 'menu-button', { text: 'Event' })))
+      )
     )
   if (document.documentURI.startsWith('http://localhost')) {
     let responseButtons = $('.response-button')
@@ -100,7 +101,13 @@ localStorage.removeItem('game_Data');
   XMLHttpRequest.prototype.open = function (method, url, async, user, pass) {
     // noinspection JSUnusedLocalSymbols
     this.addEventListener('load', function (event) {
-      if (/json\?h/.test(url)) {
+      let urlString
+      if (typeof url === "string") {
+        urlString = url
+      } else {
+        urlString = url.href
+      }
+      if (/json\?h/.test(urlString)) {
         handleResponse(JSON.parse(this.responseText))
       }
     })
@@ -114,16 +121,19 @@ localStorage.removeItem('game_Data');
  * @param {string[] }response
  */
 function handleResponse (response) {
-  let services = []
   for (const resp of response) {
     const res = new InnoResponse(resp)
     let classMethod = `${res.requestClass}.${res.requestMethod}`
-    let class_Method = `${res.requestClass}_${res.requestMethod}`
-    let data = res.responseData
+    // let class_Method = `${res.requestClass}_${res.requestMethod}`
+    // let data = res.responseData
     let tryFunction = `${res.requestClass}(res.requestMethod, res.responseData)`
     switch (res.requestClass) {
+      case 'BoostService':
+        BoostService(res.requestMethod, res.responseData)
+        break
       case 'IdleGameService':
-        IdleGameService(res.requestMethod, res.responseData)
+        // ToDo: Idle Game needs a lot of work still
+        // IdleGameService(res.requestMethod, res.responseData)
         break
       case 'TimeService':
         game_Data = TimeService(res.requestMethod, res.responseData, game_Data)
@@ -190,7 +200,7 @@ function AntiquesDealerService (method, data) {
 
   }
   else {
-    console.log('AntiquesDealer', method)
+    console.log('AntiquesDealer', method, data)
   }
 }
 
@@ -199,7 +209,7 @@ function ArmyUnitManagementService (method, data) {
 
   }
   else {
-    console.log('ArmyUnit', method)
+    console.log('ArmyUnit', method, data)
   }
 }
 
@@ -208,7 +218,7 @@ function BattlefieldService (method, data) {
 
   }
   else {
-    console.log('Battlefield', method)
+    console.log('Battlefield', method, data)
   }
 }
 
@@ -220,18 +230,20 @@ function BlueprintService (method, data) {
 
   }
   else {
-    console.log('Blueprint', method)
+    console.log('Blueprint', method, data)
   }
 }
 
 function BonusService (method, data) {
   if (method === 'getBonuses') {
     data.forEach((bonus) => {
-      game_Data.Bonuses[bonus.type] = bonus.value
+      game_Data.Bonuses.Persistent[bonus.type] = bonus.value
     })
   }
   else if (method === 'getLimitedBonuses') {
-
+    data.forEach((bonus) => {
+      game_Data.Bonuses.Limited[bonus.type] = {amount: bonus.amount, value: bonus.value, source: bonus.entityId}
+    })
   }
   else {
     console.log('Bonus', method)
@@ -332,6 +344,14 @@ function ChampionshipService (method, data) {
     console.log('Championship', method)
   }
 }
+function ChestEventService (method, data) {
+  if (method === 'getOverview') {
+
+  }
+  else {
+    console.log('ChestEvent', method)
+  }
+}
 
 function CityMapService (method, data) {
   if (method === 'getNextId') {
@@ -399,9 +419,25 @@ function EmissaryService (method, data) {
   }
 }
 
+function EventModifierService (method, data) {
+  if (method === 'getCurrent') {
+
+  }
+  else {
+    console.log('EventModifier', method)
+  }
+}
 function EventPassService (method, data) {
   if (method === 'getPreview') {
-
+    let panel = $('#event-panel')
+    // There is an active event, so load the appropriate sidebar
+    switch (data['context']) {
+      case 'anniversary_event':
+        anniversaryEvent(data)
+        break
+      default:
+        console.log('This event is not handled yet.')
+    }
   }
   else {
     console.log('EventPass', method)
@@ -438,7 +474,69 @@ function FriendsTavernService (method, data) {
 
 function GreatBuildingsService (method, data) {
   if (method === 'getOtherPlayerOverview') {
+    let playerId = data[0]['player']['player_id']
+    let myArcBonus = 1
+    try {
+      myArcBonus += game_Data.Bonuses.Limited['contribution_boost'].value / 100
+    } catch {
 
+    }
+    let snipingTable = $('#sniper-panel .panel-content')
+    let p = game_Data.Social.Neighbors[data[0]['player']['player_id']]
+    let clan = p.clanId
+    let flag = clan ? p.clanFlag.toLowerCase() : 'deleted_flag'
+    snipingTable.empty()
+      .append($($E('div', 'playerInfo'))
+        .append($($E('img', 'playerAvatar', { src: asset(avatar(p.avatar)) })))
+        .append($($E('img', 'playerGuild', { src: asset(`/shared/clanflags/${flag}.jpg`) })))
+        .append($($E('span', 'playerIndex', { text: p.rank})))
+        .append($($E('span', 'playerName', { text: p.name }))))
+      .append($($E('div', 'data-table')))
+    let panel = $('#sniper-panel .data-table')
+    panel.empty()
+      .append($($E('div', 'tableHeader columnNames'))
+        .append($($E('div', 'gbIcon', { text: 'Bldg' })))
+        .append($($E('div', 'gbLevel', { text: 'Lvl' })))
+        .append($($E('div', 'gbProgress', { text: 'Progress' })))
+        .append($($E('div', 'gbRank', { text: 'Rank/FP' })))
+        .append($($E('div', 'gbStatus', { text: 'Status' }))))
+    for (let building of data) {
+      let b = new GBProgress(building)
+      b.buildingData = gbData['gbsData'][gbData['city_entities'][b.entityId]['key']]
+      b.short = gbData['city_entities'][b.entityId]['short']
+      b.arcBoostedFP = Math.ceil(myArcBonus * b.rewardFP)
+      let status = ''
+      let negative = ''
+      if (b.placedFP > 0) {
+        status = b.arcBoostedFP - b.placedFP
+        negative = status < 0 ? ' negative' : ''
+      }
+      else {
+        let fpRemain = b.max - b.current
+        let minSnipe = Math.ceil(fpRemain / 2)
+        let rewards = b.buildingData['levels'][b.level]['reward']
+        for (let reward of rewards) {
+          if (minSnipe <= reward['fp'] * myArcBonus) {
+            status = Math.ceil((reward['fp'] * myArcBonus) - minSnipe)
+            break
+          }
+        }
+      }
+      panel
+          .append($($E('div', 'tableRow'))
+              .append($($E('div', 'gbIcon', { style: { backgroundImage: b.icon } })))
+              .append($($E('div', 'gbLevel', { text: b.level })))
+              .append($($E('div', 'gbProgress'))
+                  .append($($E('span', 'gbProgressText', { text: `${b.current}/${b.max}` })))
+                  .append($E('br'))
+                  .append($($E('progress', 'gbProgressBar', { max: b.max, value: b.current }))))
+              .append($($E('div', 'gbRankBox'))
+                  .append($($E('span', 'gbRank', { text: b.rank > 0 ? b.rank : '' })))
+                  .append($E('br'))
+                  .append($($E('span', 'gbReward', { text: b.placedFP > 0 ? `${b.placedFP} FP` : '' }))))
+              .append($($E('div', `gbStatusBox${negative}`, { text: status })))
+          )
+    }
   }
   else if (method === 'getConstruction') {
   }
@@ -517,24 +615,33 @@ function IdleGameService (method, data) {
         t.Objective,
         $E('progress', 'taskProgress', { max: t.Required, value: t.Progress }),
         $E('div', null, {id: `countdown-task-${t.TaskId}`})])
-      let timeToComplete = 0
+      function calculateCountdown(required, progress, taskId, building='market_1') {
+        let timeToComplete = 0
+        if (taskId === 16 || taskId === 31) {
+          let workshopsPS = 0
+          for (let ws=1; ws<6; ws++) {
+            workshopsPS += (ig.Buildings[`workshop_${ws}`].Producing / ig.Buildings[`workshop_${ws}`].Speed)
+          }
+          timeToComplete = Math.ceil((required - progress) / workshopsPS)
+        } else {
+          if (required > progress) {
+            timeToComplete = Math.ceil((required - progress) / ig.Buildings[building].Producing) * ig.Buildings[building].Speed
+          }
+        }
+        let readyAt = new Date().getTime() + timeToComplete*1000
+        countdowns.push([taskId, readyAt])
+      }
       switch(t.Type) {
         case 'reach_character_level':
           let cost = 0
           for (let u=t.Progress; u<t.Required; u++) {
             let lvCost = Math.ceil(ig.Buildings[t.Target[0]].baseUpgradeCost * (ig.Buildings[t.Target[0]].upgradeRate ** (u - 1)))
             cost += lvCost
-            console.log(cost, u, lvCost)
           }
+          calculateCountdown(cost, ig.Shamrocks, t.TaskId)
           break
         case 'collect_idle_currency':
-          if (t.Target.length === 1) {
-            let building = ig.Buildings[t.Target[0]]
-            let iterations = Math.ceil((t.Required - t.Progress) / building.Producing)
-            timeToComplete = iterations * building.Speed
-            let readyAt = new Date().getTime() + timeToComplete
-            countdowns.push([t.TaskId, readyAt])
-          }
+          calculateCountdown(t.Required, t.Progress, t.TaskId, t.Target[0])
           break
         case 'upgrade_character':
           let upgrades = []
@@ -649,6 +756,23 @@ function ItemExchangeService (method, data) {
   }
 }
 
+function LeagueService (method, data) {
+  if (method === 'getLeaguesConfig') {
+  }
+  else if (method === 'getRank') {
+
+  }
+  else {
+    console.log('League', method)
+  }
+}
+function MergerGameService (method, data) {
+  if (method === 'getOverview') {
+  }
+  else {
+    console.log('MergerGame', method)
+  }
+}
 function MessageService (method, data) {
   if (method === 'newMessage') {
   }
@@ -661,10 +785,18 @@ function OtherPlayerService (method, data) {
   if (method === 'updateActions') {
   }
   else if (method === 'getSocialList') {
+    let socialKeys = {friends: 'Friends', neighbours: 'Neighbors', guildMembers: 'Guild'}
+    for (let keyList in socialKeys) {
+      data[keyList].forEach((otherPlayer) => {
+        game_Data.Social[socialKeys[keyList]][otherPlayer['player_id']] = new OtherPlayer(otherPlayer)
+      })
+    }
   }
   else if (method === 'getAwaitingFriendRequestCount') {
   }
   else if (method === 'getEventsPaginated') {
+  }
+  else if (method === 'getCityProtections') {
   }
   else {
     console.log('OtherPlayer', method)
@@ -793,6 +925,13 @@ function StartupService (method, data) {
   }
 }
 
+function TimedSpecialRewardService (method, data) {
+  if (method === 'getTimedSpecial') {
+  }
+  else {
+    console.log('TimedSpecialReward', method)
+  }
+}
 function TimerService (method, data) {
   if (method === 'getTimers') {
   }
@@ -819,60 +958,4 @@ function TradeService (method, data) {
 
 
 function SnipingOverview (data) {
-  let arcBonus = 1.795
-  let p = data[0]['player']
-  $('#sniper-panel .panel-content').empty()
-    .append($($E('div', 'playerInfo'))
-      .append($($E('img', 'playerAvatar', { src: asset(avatar(p['avatar'])) })))
-      // ToDo: Pull actual guild flag from player data (in startup)
-      .append($($E('img', 'playerGuild', { src: asset('/shared/clanflags/deleted_flag.jpg') })))
-      .append($($E('span', 'playerName', { text: p.name }))))
-    .append($($E('div', 'data-table')))
-  let panel = $('#sniper-panel .data-table')
-  panel.empty()
-    .append($($E('div', 'tableHeader'))
-      .append($($E('div', 'columnNames'))
-        .append($($E('div', 'gbIcon', { text: 'Bldg' })))
-        .append($($E('div', 'gbLevel', { text: 'Lvl' })))
-        .append($($E('div', 'gbProgress', { text: 'Progress' })))
-        .append($($E('div', 'gbRank', { text: 'Rank/FP' })))
-        .append($($E('div', 'gbStatus', { text: 'Status' })))))
-  for (let building of data) {
-    let b = new GBProgress(building)
-    b.buildingData = gbData['gbsData'][gbData['city_entities'][b.entityId]['key']]
-    b.short = gbData['city_entities'][b.entityId]['short']
-    b.arcBoostedFP = Math.ceil(arcBonus * b.rewardFP)
-    let status = ''
-    let negative = ''
-    if (b.placedFP > 0) {
-      status = b.arcBoostedFP - b.placedFP
-      negative = status < 0 ? ' negative' : ''
-    }
-    else {
-      let fpRemain = b.max - b.current
-      let minSnipe = Math.ceil(fpRemain / 2)
-      let rewards = b.buildingData['levels'][b.level]['reward']
-      for (let reward of rewards) {
-        if (minSnipe <= reward['fp'] * arcBonus) {
-          status = Math.ceil((reward['fp'] * arcBonus) - minSnipe)
-          break
-        }
-      }
-    }
-    console.log(building.name, b.arcBoostedFP)
-    panel
-      .append($($E('div', 'tableRow'))
-        .append($($E('div', 'gbIcon', { style: { backgroundImage: b.icon } })))
-        .append($($E('div', 'gbLevel', { text: b.level })))
-        .append($($E('div', 'gbProgress'))
-          .append($($E('span', 'gbProgressText', { text: `${b.current}/${b.max}` })))
-          .append($E('br'))
-          .append($($E('progress', 'gbProgressBar', { max: b.max, value: b.current }))))
-        .append($($E('div', 'gbRankBox'))
-          .append($($E('span', 'gbRank', { text: b.rank > 0 ? b.rank : '' })))
-          .append($E('br'))
-          .append($($E('span', 'gbReward', { text: b.placedFP > 0 ? `${b.placedFP} FP` : '' }))))
-        .append($($E('div', `gbStatusBox${negative}`, { text: status })))
-      )
-  }
 }

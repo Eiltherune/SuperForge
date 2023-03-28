@@ -7,13 +7,26 @@
 }
 
 .info-panel{
-    background-color: #282828;
+    background-color: #333333;
     color: aliceblue;
     float: right;
-    font-family: Arial, sans-serif;
-    font-size: .75em;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 16px;
+    /*font-size: .75em;*/
     height: 100%;
     width: 300px;
+}
+
+.info-panel .title {
+    background-color: rgb(33, 33, 33);
+    /*color: rgb(60, 60, 60);*/
+    font-weight: 700;
+    padding: 5px;
+    font-size: 1.25em;
+    box-shadow: 0 0 8px 1px black;
+    height: auto;
+    width: inherit;
+    text-align: center;
 }
 .panel-h1 {
     font-size: 2em;
@@ -29,6 +42,7 @@
 }
 .data-panel {
     height: calc(100% - 50px);
+    text-align: left;
 }
 .panel {
     padding-top: 20px;
@@ -76,6 +90,10 @@
 .playerName {
     padding-left: 10px;
     font-size: 1.5em;
+    vertical-align: middle;
+}
+.playerIndex::before {
+    content: '#'
 }
 .columnNames{
     font-size: 1.25em;
@@ -95,9 +113,13 @@
     height: 30px;
     width: 30px;
     background-position: center;
-    background-size: 250% 250%;
+    background-size: 250%;
     background-repeat: no-repeat;
 }
 .negative {
     color: red;
+}
+
+#sniper-panel .data-table .tableHeader {
+    font-size: .8em;
 }
