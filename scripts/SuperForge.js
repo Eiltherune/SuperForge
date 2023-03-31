@@ -229,7 +229,7 @@ function BlueprintService (method, data) {
   if (method === 'setUsed') {
 
   }
-  else if (method === 'newReward') {
+  else if (method === 'newReward ') {
 
   }
   else if (method === 'unlockLevel') {
@@ -315,6 +315,9 @@ function CampaignService (method, data) {
   }
   else if (method === 'infiltrate') {
   }
+  else if (method === 'buySector') {
+
+  }
   else {
     console.log('Campaign', method)
   }
@@ -327,6 +330,12 @@ function CastleSystemService (method, data) {
   else if (method === 'getOverview') {
     game_Data.Castle.Overview = data
   }
+  else if (method === 'collectDailyReward') {
+
+  }
+  else if (method === 'collectDailyPoints') {
+
+  }
   else {
     console.log('Castle', method)
   }
@@ -336,6 +345,11 @@ function ChallengeService (method, data) {
   if (method === 'getActiveChallenges') {
   }
   else if (method === 'getOptions') {
+  }
+  else if (method === 'selectOption') {
+  }
+  else if (method === 'updateTaskProgress') {
+
   }
   else {
     console.log('Challenge', method)
@@ -361,6 +375,9 @@ function ChestEventService (method, data) {
 
 function CityMapService (method, data) {
   if (method === 'getNextId') {
+  }
+  else if (method === 'getEntities') {
+    storeResponse('CityMapService', method, data)
   }
   else if (method === 'updateEntity') {
   }
@@ -389,7 +406,14 @@ function CityProductionService (method, data) {
     console.log('CityProduction', method)
   }
 }
-
+function CityReconstructionService (method, data) {
+  if (method === 'getDraft') {
+    storeResponse('CityReconstructionService', method, data)
+  }
+  else {
+    console.log('CityReconstruction', method, data)
+  }
+}
 function ClanRecruitmentService (method, data) {
   if (method === 'getPlayerRecruitments') {
 
@@ -501,6 +525,17 @@ function FriendsTavernService (method, data) {
     console.log('FriendsTavern', method)
   }
 }
+function FriendsTavernShopService (method, data) {
+  if (method === 'getShop') {
+
+  }
+  else if (method === 'buyItem') {
+
+  }
+  else {
+    console.log('FriendsTavernShop', method, data)
+  }
+}
 
 function GreatBuildingsService (method, data) {
   if (method === 'getOtherPlayerOverview') {
@@ -595,6 +630,10 @@ function GuildExpeditionService (method, data) {
   else if (method === 'getGuildReward') {
   }
   else if (method === 'openChest') {
+  }
+  else if (method === 'getChests') {
+  }
+  else if (method === 'getDifficulties') {
   }
   else {
     console.log('GuildExpedition', method)
@@ -839,6 +878,9 @@ function OtherPlayerService (method, data) {
   else if (method === 'getCityProtections') {
   }
   else if (method === 'getOtherPlayerCityMapEntity') {
+  }
+  else if (method === 'visitPlayer') {
+
   }
   else {
     console.log('OtherPlayer', method)

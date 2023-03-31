@@ -44,6 +44,25 @@ function togglePanel(panel) {
   }
 }
 
+function storeResponse (resClass, resMethod, resData) {
+  let storedData
+  if ('storedData' in localStorage) {
+    storedData = JSON.parse(localStorage.getItem('storedData'))
+  } else {
+    storedData = { }
+  }
+  if (!(resClass in storedData)) {
+    storedData[resClass] = {}
+  }
+  if (!(resMethod in storedData[resClass])) {
+    storedData[resClass][resMethod] = {}
+  }
+  if (storedData[resClass][resMethod].length < 10) {
+    storedData[resClass][resMethod].push(resData)
+  }
+  localStorage.setItem('storedData', JSON.stringify(storedData))
+}
+
 let assetMap = JSON.parse(GM_getResourceText("assetMap"))
 function asset (assetPath) {
   const assetDot = assetPath.lastIndexOf('.')
@@ -80,9 +99,9 @@ class InnoResponse {
    * @param {string} data - a JSON string
    */
   constructor(data) {
-      this.requestClass = data['requestClass']
-      this.requestMethod = data['requestMethod']
-      this.responseData = data['responseData']
+      this.requestClass = data['requestClass'].trim()
+      this.requestMethod = data['requestMethod'].trim()
+      this.responseData = data['responseData'].trim()
   }
 }
 class OtherPlayer {
