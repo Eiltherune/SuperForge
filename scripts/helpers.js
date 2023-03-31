@@ -360,6 +360,10 @@ function IdleGameCharacterState (data, metadata) {
     this.YieldPS = this.Producing / this.Speed
   }
 
+function anniversaryEvent(data) {
+  console.log(data)
+}
+
 function GameData () {
     this.LastUpdate = 0
     this.Bonuses = {Persistent: {}, Limited: {}}
